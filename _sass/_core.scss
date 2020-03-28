@@ -1,0 +1,43 @@
+// Core.scss
+
+
+// Custom styles start here
+
+
+// start styles
+
+* {
+    color: white;
+}
+
+body {
+    position: relative;
+    background: rgb(48, 41, 44);
+
+    h1 {
+        color: $headerColor;
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .container {
+        width: 85vw;
+        // margin: 2rem auto;
+        padding: 1rem 0;
+
+        @include respond-below(md){
+            width: 86vw;
+        }
+    }
+
+    .gallery {
+        &-thumbnail {
+            border: $headerColor 1px dotted;
+        }
+    }
+}
+
+footer{
+    background-color: rgb(19, 12, 11);
+    color:white;
+}

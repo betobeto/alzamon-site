@@ -1,0 +1,26 @@
+// Home Page Blocks
+
+.block{
+    &-about{
+        background-color: $blockAboutColor;
+        color:white;
+        h2{
+            font-weight:800;
+            font-size: 3rem;
+        }
+        &-image{
+                display: block;
+                background-image: url('../images/alzamon-avatar.png');
+                background-repeat: no-repeat;
+                background-position: 100% 5%;
+                background-size: 125%;
+                min-height:50vh;
+                @include respond-between(sm,md){
+                    background-position: 70% 100%;
+                }
+                @include respond-below(sm){
+                    background-position-y:15%;
+                }
+            }
+        }
+    }

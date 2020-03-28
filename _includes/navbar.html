@@ -1,0 +1,56 @@
+<!-- Jumbotron -->
+<div class="jumbotron jumbotron-fluid d-flex justify-content-center">
+    <a href="{{site.url}}"><h1 class="display-4"><span>Alzamon.com</span></h1></a>
+</div>
+
+
+<!-- Navbar -->
+<nav class="d-sm-flex flex-sm-column navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+    <!-- navbar brand - tablet & under -->
+    <a href="#" class="navbar-brand d-block d-sm-none"><span>Alzamon.com</span></a>
+    <!-- toggler button - tablet & under -->
+    <button class="navbar-toggler" data-target="#azmNav" data-toggle="collapse" aria-controls="my-nav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="azmNav" class="collapse navbar-collapse justify-content-between">
+        <ul class="navbar-nav mr-auto">
+            <!-- nav loop -->
+    {% for nav in site.data.navigation %}
+        {% if nav.url == page.url %}
+    <li class="nav-item active"><a class="nav-link" href="{{ nav.url }}">{{ nav.text }}</a></li>
+        {% else %}
+     <li class="nav-item"><a class="nav-link" href="{{ nav.url }}">{{ nav.text }}</a></li>   
+        {% endif %}
+    {% endfor %}
+    <!-- end navbar loop -->
+
+            <!-- item 2 - two level dropdown -->
+            <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="submenu-portfolio" href="#"
+                    tabindex="1" aria-disabled="true"><i class="far fa-images"></i> Portfolio <span class="caret"></span></a>
+                <div class="dropdown-menu" aria-labelledby="submenu-portfolio">
+                    <a href="{{site.url}}/portfolio-illustration" class="dropdown-item">Illustrations</a>
+                    <a href="{{site.url}}/portfolio-characterdesign" class="dropdown-item">Character Design</a>
+                  <div class="dropdown-divider"></div> 
+                    <a href="{{site.url}}/portfolio-comics" class="dropdown-item">Comics</a>
+                </div>
+            </li> -->
+            
+             <!-- social links -->
+             <li class="nav-item">
+                <a class="nav-link social" href="https://instagram.com/alzamonart" tabindex="2" target="_blank" title="Alzamon on Instagram"><i class="fab fa-instagram"></i>&nbsp;</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link social" href="#" tabindex="2" title="Alzamon on Behance"><i class="fab fa-behance"></i>&nbsp;</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link social" href="#" tabindex="3" aria-disabled="true" title="Alzamon on Deviantart"><i
+                        class="fab fa-deviantart"></i>&nbsp;</a>
+            </li>
+        </ul>
+    </div>
+</nav>

@@ -1,0 +1,32 @@
+# alzamon. art configuration file
+
+# base URL  - change when online
+url: "http://localhost:4000"
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+#portfolio categories
+category-list: [homepage,illustration,characterdesign,sketchbook]
+
+#gather all collections under /portfolio
+#collections_dir: portfolio
+
+collections:
+  portfolio:
+    output: true
+  comics:
+    output: true
+  sketchbook:
+    output: true
+    # permalink: /portfolio/:path
+
+# build settings
+permalink: pretty
+
+#used site plugins
+plugins:
+  - jekyll-seo-tag

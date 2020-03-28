@@ -1,0 +1,32 @@
+--- 
+layout: default
+title: Blog - Alzamon
+---
+
+<div class="container portfolio-category">
+    <div class="row">
+        <div class="col py-3">
+            <h2 class="text-center">Blog</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col posts-grid">
+            
+            <ul>
+                {% for post in site.posts %}
+                  <li>
+                    <a href="{{ post.url }}">
+                      <img src="{{post.postimagesmall}}" alt="{{post.title}}">
+                   <h6>
+                     {{ post.title }}
+                   </h6>
+                      <span>{{post.date | date_to_string:"ordinal","US" }}</span>
+                    </a>
+                  </li>
+                {% endfor %}
+              </ul>
+              
+        </div>
+    </div>
+</div>

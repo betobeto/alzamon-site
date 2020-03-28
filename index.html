@@ -1,0 +1,37 @@
+---
+layout: default
+title: Alzamon Children's Portfolio site of Alberto Gonzalez
+---
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <!-- Portfolio Masonry -->
+            <div class="portfolio-masonry">
+                <!-- Show *only* items matching the "homepage" category -->
+                {% assign hp = site.portfolio | where: "categories", "homepage" %}
+                {% for item in hp %}
+                <!-- masonry item -->
+                <div class="portfolio-masonry-item">
+                    <a href="{{item.url}}">
+                        <div class="pm-overlay">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <img src="{{item.masonryimage}}" alt="{{item.pretty_title}}">
+                    </a>
+
+                    <p><strong>{{item.pretty_title}}</strong> / {{item.pretty_category}}</p>
+                </div>
+                <!-- /masonry item -->
+                {% endfor %}
+            </div>
+            <!-- /End Masonry -->
+
+        </div>
+    </div>
+</div>
+
+{% include block-about.html %}
+
+{% include ig-lightwidget.html %}
+
+

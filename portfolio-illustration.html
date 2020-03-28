@@ -1,0 +1,67 @@
+---
+layout: default
+title: Illustrations - Alzamon
+---
+{% comment %}
+=======================
+Portfolio page: set source variable on Assign tag below
+=======================
+{% endcomment %}
+
+{% assign illos = site.portfolio %}
+
+<div class="container portfolio-category">
+    <div class="row">
+        <div class="col py-3">
+            <h2 class="text-center">Illustration</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <!-- Illustration Portfolio Masonry -->
+            <div class="portfolio-masonry">
+
+{% comment %}
+====================================================
+Optional: set limit on number of displayed items
+ex: --for item in illos limit:40--
+====================================================
+{% endcomment %}
+
+                {% for item in illos %}
+                <!-- masonry item -->
+                <div class="portfolio-masonry-item">
+                    <a href="{{item.url}}">
+                        <div class="pm-overlay">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <img src="{{item.masonryimage}}" alt="{{item.pretty_title}}">
+                        <!-- <div class="portfolio-masonry-title">
+                            <p class="text-center">{{item.pretty_title}}</p>
+                        </div> -->
+                    </a>
+
+                    <p><strong>{{item.pretty_title}}</strong> / {{item.pretty_category}}</p>
+                </div>
+                <!-- /masonry item -->
+                {% endfor %}
+            </div>
+            <!-- /End Masonry -->
+        </div>
+    </div>
+
+    <!-- separator -->
+    <div class="row">
+        <div class="col separator-h">
+        </div>
+    </div>
+
+    <!-- <div class="row">
+        <div class="col">
+            <p>{{illos.size}} items in this category</p>
+        </div>
+    </div> -->
+
+    {% include ig-lightwidget.html %}
+</div>

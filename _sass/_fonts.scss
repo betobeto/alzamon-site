@@ -1,0 +1,34 @@
+// @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:800|Cabin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&family=Open+Sans:wght@300;400&display=swap');
+
+h1, h2, h3, h4{
+    font-weight: 700;
+}
+
+p, strong, ul, ol, li{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, 
+.portfolio-previous,
+.portfolio-next,
+.portfolio-previous>span>strong,
+.portfolio-next>span>strong,
+.pm-overlay>span,
+.lg-sub-html,
+.portfolio-grid-item,
+.posts-grid span 
+{
+    // font-family: 'Alegreya Sans', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+//blog font styles
+
+.post{
+    &-content{
+        p, span, ul li{
+            font-family: 'Open Sans Condensed', sans-serif;
+        }
+    }
+}

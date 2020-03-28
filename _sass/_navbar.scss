@@ -1,0 +1,66 @@
+// Navbar
+// ===========
+.jumbotron {
+    margin-bottom: 0px;
+    background-color: rgb(71, 43, 57);
+    h1 {
+        background-image: url('/assets/images/alzamon_logo.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        display: inline-block;
+        width: 280px;
+        height: 130px;
+        >span {
+            @include hideText;
+        }
+        @include respond-below(md) {
+            width: 200px;
+            height: 90px;
+        }
+    }
+    @include respond-below(sm) {
+        // display jumbotron only in medium and up screens
+        display: none !important;
+    }
+}
+
+// Navbar
+// ====================
+
+.navbar {
+    &-brand {
+        background-image: url('/assets/images/alzamon_logo.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        display: inline-block;
+        height: 60px;
+        width: 180px;
+        >span {
+            @include hideText;
+        }
+    }
+    &-nav {
+        // menu items list
+        .nav-item {
+            // each item
+            .nav-link {
+                margin-right: 1rem;
+                &.social {
+                    // social networks icons
+                    i {
+                        color: $linkColor;
+                    }
+                }
+            }
+            &.active {
+                .nav-link {
+                    color: $linkColor;
+                    font-weight: bold;
+                    border-bottom: 4px $linkUnderlineColor double;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,443 @@
+// AZM Portfolio Styles
+
+
+// class used on <body> of portfolio pages
+// ========================================
+.portfolioPage {
+    position: relative;
+    overflow-x: hidden;
+    @include portfolioBgGradient;
+    background-attachment: scroll;
+
+    &:before {
+        // use current portfolio piece as bg image
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.10;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-attachment: fixed;
+        -ms-background-size: $portfolioPageBgSize;
+        -o-background-size: $portfolioPageBgSize;
+        -moz-background-size: $portfolioPageBgSize;
+        -webkit-background-size: $portfolioPageBgSize;
+        background-size: $portfolioPageBgSize;
+    }
+}
+
+// Set Portfolio Masonry container styles
+// =======================================
+.portfolio {
+    &-category {
+
+        // portfolio category pages
+        h2 {
+            color: $portfolioHeaderColor;
+            font-size: 4rem;
+        }
+    }
+
+    &-masonry {
+        // portfolio masonry pages
+        // set masonry global values
+        transition: all .022s ease-in-out;
+        column-gap: $portfolioMasonryColumnGap;
+        column-fill: auto;
+
+        // define masonry item attributes
+        &-item {
+            padding: $portfolioMasonryItemPadding;
+            background: $portfolioItemBgColor;
+            margin-bottom: $portfolioMasonryColumnGap;
+            display: inline-block; // Fix the misalignment of items 
+            vertical-align: top; // Keep the item on the very top 
+
+            img {
+                // portfolio thumb image
+                position: relative;
+                z-index: 2;
+                transition: all .5s ease-in-out;
+                backface-visibility: hidden; // Remove Image flickering on hover
+            }
+
+            p {
+                margin: 0.4rem 0 0 0;
+                color: $portfolioMasonryTitleColor;
+                font-family: 'Open Sans Condensed', sans-serif;
+
+                strong {
+                    font-family: 'Open Sans Condensed', sans-serif;
+                    color: $portfolioItemLinkColor;
+                    font-size: 1rem;
+                    letter-spacing: -0.03rem;
+                }
+            }
+        }
+
+        // breakpoints
+        @include respond-between(sm, lg) {
+            column-count: 2;
+        }
+
+        @include respond-above(lg) {
+            column-count: 3;
+        }
+
+        @include respond-below(sm) {
+            top: 80px;
+        }
+    }
+
+    // previous-next page navigation
+    // ================================
+    &-previousNext {
+        flex-direction: row !important;
+
+        // previous-next page links
+        a {
+
+            &.portfolio-previous,
+            &.portfolio-next {
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                transition: all 0.5 ease-in-out;
+
+                img {
+                    width: 80px;
+                    height: auto;
+                }
+
+                i.fas {
+                    color: $portfolioItemLinkColor;
+                    font-size: 2rem;
+                    margin: 0 0.8rem;
+                }
+
+                a {
+                    text-decoration: none;
+                }
+
+                span {
+                    margin: 0 0.7rem;
+
+                    strong {
+                        color: $portfolioItemLinkColor;
+                    }
+                }
+
+                @include respond-above(lg) {
+                    width: 400px;
+                }
+
+                @include respond-between(sm, md) {
+                    width: 300px;
+                }
+
+                @include respond-below(sm) {
+                    width: 200px;
+
+                    img {
+                        width: 60px;
+                    }
+                }
+
+                &:hover {
+
+                    i.fas,
+                    span>strong {
+                        color: white;
+                    }
+                }
+            }
+
+            &.portfolio-previous {
+                padding: 0.8rem 2rem 0.8rem 0.8rem;
+                border-radius: 16px;
+                @include gradientBgPrev;
+
+                @include respond-above(lg) {
+                    background-size: 420%;
+                    background-position: -1270px 0;
+
+                    &:hover {
+                        background-position: 0;
+                    }
+                }
+
+                @include respond-below(sm) {
+                    background-position: -160px 0;
+                    background-size: 200%;
+                    // padding:0.2rem 0.2rem 0.2rem 0.5rem;
+                    border-radius: 8px;
+                }
+            }
+
+            &.portfolio-next {
+                padding: 0.8rem 0.8rem 0.8rem 2rem;
+                border-radius: 16px;
+                @include gradientBgNext;
+
+                @include respond-above(lg) {
+                    background-size: 450%;
+                    background-position: 1700px 0;
+
+                    &:hover {
+                        background-position: 1000px 0;
+                    }
+                }
+
+                @include respond-below(sm) {
+                    background-position: 0;
+                    background-size: 200%;
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
+}
+
+// Portfolio Masonry Item settings
+// ========================================
+.portfolio-masonry-item {
+    a {
+        // container item
+        @include masonryBoxShadow;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        position: relative;
+        overflow: hidden;
+        text-decoration: none;
+        @include masonryItemBgGradient;
+
+        .pm-overlay {
+            //overlay on hover
+            @include portfolioMasonryOverlay;
+        }
+
+        img {
+            position: relative;
+            z-index: 5;
+        }
+
+        &:hover {
+            .pm-overlay {
+                opacity: 0.5;
+
+                >span {
+                    opacity: 1;
+                }
+            }
+
+            // lower opacity from masonry image
+            >img {
+                opacity: .40;
+            }
+
+        }
+    }
+}
+
+// Portfolio Grid Page Styles
+// ===================================
+#portfolio-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 1rem;
+    // grid-template-rows: 100vh;
+
+    .portfolio-grid-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: $portfolioMasonryItemPadding;
+        background: $portfolioItemBgColor;
+        margin-bottom: $portfolioMasonryColumnGap;
+        position: relative;
+        transition: all 0.5s ease;
+
+        &-inner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            a {
+                position: relative;
+
+                i.fas {
+                    // font awesome search icon
+                    position: absolute;
+                    top: 40%;
+                    left: 48%;
+                    z-index: 7;
+                    opacity: 0.01;
+                    margin: 0.8rem 0;
+                    transition: all 0.25s ease-in-out;
+                    font-size: 2rem;
+                }
+
+                img {
+                    opacity: 1;
+                    transition: all 0.25s ease-in-out;
+                    margin-bottom: 0.5rem;
+                }
+
+                &:hover {
+                    i.fas {
+                        opacity: 1;
+                    }
+
+                    img {
+                        opacity: 0.3;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Portfolio Item Page Styles
+// ===================================
+#portfolio-item,
+#comics-item {
+    @include portfolioTextHeader;
+
+    img:first-child {
+        // main portfolio image
+        background-color: $portfolioItemBgColor;
+        padding: 0.4rem;
+        @include masonryBoxShadow;
+    }
+}
+
+#portfolio-item {
+    .row {
+        &:nth-of-type(2) {
+            @include respond-below(sm) {
+                // reverse column order for mobile
+                flex-direction: column-reverse;
+            }
+        }
+    }
+}
+
+// Portfolio Item Content (Markdown)
+// ===================================
+.portfolio-item {
+
+    &-content,
+    &-extras {
+        h2 {
+            text-align: left;
+            font-size: 3rem;
+        }
+
+        h3 {
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            margin: 1.5rem 0;
+        }
+
+        ol {
+            // for Markdown images
+            // border: fuchsia 1px dotted;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-columns: 32% 32% 32%;
+            // grid-row: 100vw;
+            grid-row-gap: 1rem;
+            justify-content: space-between;
+
+            li {
+                list-style: none inside;
+                place-self: center;
+            }
+
+            @include respond-between(sm, md) {
+                grid-template-columns: 48% 48%;
+                grid-row-gap: 2rem;
+            }
+
+            @include respond-below(sm) {
+                grid-template-columns: 100%;
+                grid-row-gap: 1.8rem;
+            }
+        }
+    }
+}
+
+// Portfolio Comics Page styles
+// ===================================
+#comicPages {
+    display: grid;
+    grid-template-columns: 22% 22% 22% 22%;
+    grid-column-gap: 1rem;
+    justify-content: center;
+
+    a {
+        position: relative;
+
+        img {
+            transform: scale(0.85);
+            transition: all 0.25s ease;
+        }
+
+        //    Start overlay + hover effects
+        .thumbnailOverlay {
+            background-color: rgba(0, 0, 0, 0.1);
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            -webkit-transition: background-color 0.15s ease 0s;
+            -o-transition: background-color 0.15s ease 0s;
+            transition: background-color 0.15s ease 0s;
+
+            i.fas {
+                //search icon
+                font-size: 2.5rem;
+                opacity: 0;
+                transition: all 0.15s ease;
+            }
+
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.5);
+
+                i.fas {
+                    opacity: 1;
+                }
+            }
+        }
+
+        &:hover {
+            img {
+                transform: scale(1);
+            }
+        }
+
+        //  end overlay + hover effects  
+    }
+
+    @include respond-between(sm, md) {
+        grid-template-columns: 23% 23% 23% 23%;
+    }
+
+    @include respond-below(sm) {
+        grid-template-columns: 46% 46%;
+    }
+}

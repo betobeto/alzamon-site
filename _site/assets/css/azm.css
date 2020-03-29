@@ -272,6 +272,22 @@ footer { background-color: #130c0b; color: white; }
 
 @media (min-width: 1200px) { .posts-grid ul { grid-template-columns: 22% 22% 22% 22%; column-count: 4; } }
 
+#posts-item .post-content { position: relative; z-index: 5; }
+
+#posts-item .post-content .post-header { color: #dd1864; }
+
+#posts-item .post-content .post-header + span { color: #1f1015; }
+
+#posts-item .post-content .col { background: white; }
+
+#posts-item .post-content .col h3 { color: #dd1864; margin: 0.8rem 0 1rem 0; }
+
+#posts-item .post-content .col p { color: #1f1015 !important; margin: 0.5rem 0; font-size: 120%; }
+
+#posts-item .post-content-picture { position: relative; z-index: 10; background: white; padding: 2rem; margin: 3rem 0 0 0; transform: scale(1.1); box-shadow: 0px 4px 14px 7px rgba(41, 8, 20, 0.61); -webkit-box-shadow: 0px 4px 14px 7px rgba(41, 8, 20, 0.61); -moz-box-shadow: 0px 4px 14px 7px rgba(41, 8, 20, 0.61); }
+
+@media (max-width: 766px) { #posts-item .post-content-picture { padding: 1rem; margin-top: 2rem; } }
+
 .block-about { background-color: #dd1864; color: white; }
 
 .block-about h2 { font-weight: 800; font-size: 3rem; }

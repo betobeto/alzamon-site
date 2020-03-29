@@ -18,11 +18,16 @@
 }
 
 @mixin blogBoxShadow{
-    box-shadow: 5px 5px 5px 0px rgba(41,8,20,0.61);
-    -webkit-box-shadow: 5px 5px 5px 0px rgba(41,8,20,0.61);
-    -moz-box-shadow: 5px 5px 5px 0px rgba(41,8,20,0.61);
+    box-shadow: 5px 5px 5px 0px $blogBoxShadowColor;
+    -webkit-box-shadow: 5px 5px 5px 0px $blogBoxShadowColor;
+    -moz-box-shadow: 5px 5px 5px 0px $blogBoxShadowColor;
 }
 
+@mixin blogPostShadow{
+    box-shadow: 0px 4px 14px 7px  $blogBoxShadowColor;
+    -webkit-box-shadow: 0px 4px 14px 7px $blogBoxShadowColor;
+    -moz-box-shadow: 0px 4px 14px 7px $blogBoxShadowColor;
+}
 
 // portfolio mixins
 //========================

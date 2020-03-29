@@ -29,6 +29,7 @@
 // ====================
 
 .navbar {
+    background: $navbarBgColor;
     &-brand {
         background-image: url('/assets/images/alzamon_logo.png');
         background-repeat: no-repeat;

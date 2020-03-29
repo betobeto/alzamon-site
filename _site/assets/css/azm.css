@@ -105,6 +105,8 @@ footer { background-color: #130c0b; color: white; }
 
 @media (max-width: 766px) { .jumbotron { display: none !important; } }
 
+.navbar { background: #1a020d; }
+
 .navbar-brand { background-image: url("/assets/images/alzamon_logo.png"); background-repeat: no-repeat; background-position: center center; background-size: contain; display: inline-block; height: 60px; width: 180px; }
 
 .navbar-brand > span { position: relative; left: -9999em; }
@@ -278,9 +280,9 @@ footer { background-color: #130c0b; color: white; }
 
 #posts-item .post-content .post-header + span { color: #1f1015; }
 
-#posts-item .post-content .col { background: white; }
+#posts-item .post-content .col { background: white; padding: 0 2rem; }
 
-#posts-item .post-content .col h3 { color: #dd1864; margin: 0.8rem 0 1rem 0; }
+#posts-item .post-content .col h3 { color: #dd1864; margin: 1.6rem 0 1rem 0; }
 
 #posts-item .post-content .col p { color: #1f1015 !important; margin: 0.5rem 0; font-size: 120%; }
 

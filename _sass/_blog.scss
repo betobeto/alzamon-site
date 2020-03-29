@@ -53,9 +53,10 @@
             }
             .col {
                 background: white;
+                padding: 0 2rem;
                 h3{
                     color: $blogHeaderColor;
-                    margin: 0.8rem 0 1rem 0;
+                    margin: 1.6rem 0 1rem 0;
 
                 }
                 p{
@@ -80,15 +81,3 @@
         }
     }
 }
-
-// Post Content Styles
-
-// .post {
-//     &-header {
-//         color: $blogHeaderColor;
-
-//         +span {
-//             color: $blogTextColor;
-//         }
-//     }
-// }

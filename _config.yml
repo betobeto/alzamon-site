@@ -10,7 +10,7 @@ defaults:
       layout: "default"
 
 #portfolio categories
-category-list: [homepage,illustration,characterdesign,sketchbook]
+category-list: [homepage,illustration,characterdesign,comics,sketchbook]
 
 #gather all collections under /portfolio
 #collections_dir: portfolio

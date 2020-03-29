@@ -8,7 +8,7 @@
 const gulp = require ('gulp'),
 imagemin = require ('gulp-imagemin'),
 imageresize = require('gulp-image-resize'),
-rename = require ('gulp-rename'),
+rename = require ('gulp-rename');
 // concat = require ('gulp-concat'),
 // clean = require('gulp-rimraf');
 

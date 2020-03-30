@@ -2,7 +2,7 @@
 // ===========
 .jumbotron {
     margin-bottom: 0px;
-    background-color: rgb(71, 43, 57);
+    background-color: rgb(41, 24, 32);
     h1 {
         background-image: url('/assets/images/alzamon_logo.png');
         background-repeat: no-repeat;
@@ -22,6 +22,9 @@
     @include respond-below(sm) {
         // display jumbotron only in medium and up screens
         display: none !important;
+    }
+    @include respond-above(md){
+        padding-bottom: 0;
     }
 }
 

@@ -26,9 +26,14 @@
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 
 </head>
-<body {% if page.categories %}class="portfolioPage"{% endif %}>
+<body>
     {% include navbar.html %}
-    {{ content }}
+    <main>
+      <div class="main-container {% if page.categories %}portfolioPage{% endif %}">
+        {{ content }}
+      </div>
+      <div class="footer-scroll"></div>
+    </main>
     {% include footer.html %}
 </body>
 <!-- Javascript things -->

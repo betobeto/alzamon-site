@@ -2,13 +2,13 @@
   url: /
 
 - text: Artwork
-  url: /portfolio-all/
+  url: /portfolio/
 
 - text: Comics
-  url: /portfolio-comics/
+  url: /comics/
 
 - text: Sketchbook
-  url: /portfolio-sketchbook/
+  url: /sketchbook/
 
 - text: Blog
   url: /blog/

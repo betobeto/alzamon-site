@@ -20,6 +20,36 @@ body {
         text-align: center;
     }
 
+    main{
+        position: relative;
+        z-index: 3;
+        .main-container{
+            background: $body-bg;
+        }
+        .footer-scroll{
+            width: 100vw;
+            height: 250px;
+            margin-bottom: -250px;
+            display: block;
+            background: transparent;
+            background: url('/assets/images/daniel-footer-upsidedown.png') no-repeat center top;
+            background-size: contain;
+        }
+    }
+
+    footer{
+        background-color: rgb(19, 12, 11);
+        color:white;
+        position: sticky;
+        bottom: 0;
+        width: 100vw;
+        min-height: 300px;
+        padding: 0 0 2rem 0;
+        // border: hotpink 2px dotted;
+        z-index:2;
+    }
+
+
     .container {
         width: 85vw;
         // margin: 2rem auto;
@@ -37,7 +67,3 @@ body {
     }
 }
 
-footer{
-    background-color: rgb(19, 12, 11);
-    color:white;
-}

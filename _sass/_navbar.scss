@@ -3,6 +3,9 @@
 .jumbotron {
     margin-bottom: 0px;
     background-color: rgb(41, 24, 32);
+    position: relative;
+    z-index: 100;
+    min-height: 260px;
     h1 {
         background-image: url('/assets/images/alzamon_logo.png');
         background-repeat: no-repeat;
@@ -57,6 +60,7 @@
                         color: $linkColor;
                     }
                 }
+
             }
             &.active {
                 .nav-link {
@@ -64,6 +68,32 @@
                     font-weight: bold;
                     border-bottom: 4px $linkUnderlineColor double;
                 }
+            }
+            @include respond-below(sm){
+                        // hide nav-item breakpoints on mobile
+                        &:nth-of-type(7),
+                        &:nth-of-type(8),
+                        &:nth-of-type(9),
+                        &:nth-of-type(10){
+                            display:none;
+                        }
+            }
+        }
+    }
+}
+.nav-link-social-mobile{
+    @include respond-above(sm){
+        display: none;
+    }
+    @include respond-below(sm){
+        display:grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        border-top: $linkColor 1px solid;
+        li{
+            text-align: center;
+            i.fab{ // icons
+               font-size: 1.8rem;
+               color: $linkColor;
             }
         }
     }

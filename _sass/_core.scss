@@ -28,22 +28,23 @@ body {
         }
         .footer-scroll{
             width: 100vw;
-            height: 250px;
-            margin-bottom: -250px;
+            min-height: 1200px;
+            margin-bottom: -95vh;
             display: block;
             background: transparent;
-            background: url('/assets/images/daniel-footer-upsidedown.png') no-repeat center top;
+            background: url('/assets/images/azm-footer-rope.png') no-repeat center top;
             background-size: contain;
         }
     }
 
     footer{
-        background-color: rgb(19, 12, 11);
+        background-color: rgb(99, 16, 61);
         color:white;
         position: sticky;
         bottom: 0;
         width: 100vw;
-        min-height: 300px;
+        height:95vh;
+        // min-height: 300px;
         padding: 0 0 2rem 0;
         // border: hotpink 2px dotted;
         z-index:2;

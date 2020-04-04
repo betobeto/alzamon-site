@@ -91,9 +91,9 @@ body main { position: relative; z-index: 3; }
 
 body main .main-container { background: #1b0c11; }
 
-body main .footer-scroll { width: 100vw; height: 250px; margin-bottom: -250px; display: block; background: transparent; background: url("/assets/images/daniel-footer-upsidedown.png") no-repeat center top; background-size: contain; }
+body main .footer-scroll { width: 100vw; min-height: 1200px; margin-bottom: -95vh; display: block; background: transparent; background: url("/assets/images/azm-footer-rope.png") no-repeat center top; background-size: contain; }
 
-body footer { background-color: #130c0b; color: white; position: sticky; bottom: 0; width: 100vw; min-height: 300px; padding: 0 0 2rem 0; z-index: 2; }
+body footer { background-color: #63103d; color: white; position: sticky; bottom: 0; width: 100vw; height: 95vh; padding: 0 0 2rem 0; z-index: 2; }
 
 body .container { width: 85vw; padding: 1rem 0; }
 
@@ -101,7 +101,7 @@ body .container { width: 85vw; padding: 1rem 0; }
 
 body .gallery-thumbnail { border: #ec229f 1px dotted; }
 
-.jumbotron { margin-bottom: 0px; background-color: #291820; }
+.jumbotron { margin-bottom: 0px; background-color: #291820; position: relative; z-index: 100; min-height: 260px; }
 
 .jumbotron h1 { background-image: url("/assets/images/alzamon_logo.png"); background-repeat: no-repeat; background-position: center center; background-size: contain; display: inline-block; width: 280px; height: 130px; }
 
@@ -124,6 +124,14 @@ body .gallery-thumbnail { border: #ec229f 1px dotted; }
 .navbar-nav .nav-item .nav-link.social i { color: #dd1864; }
 
 .navbar-nav .nav-item.active .nav-link { color: #dd1864; font-weight: bold; border-bottom: 4px rgba(173, 24, 86, 0.67) double; }
+
+@media (max-width: 766px) { .navbar-nav .nav-item:nth-of-type(7), .navbar-nav .nav-item:nth-of-type(8), .navbar-nav .nav-item:nth-of-type(9), .navbar-nav .nav-item:nth-of-type(10) { display: none; } }
+
+@media (min-width: 767px) { .nav-link-social-mobile { display: none; } }
+
+@media (max-width: 766px) { .nav-link-social-mobile { display: grid; grid-template-columns: 25% 25% 25% 25%; border-top: #dd1864 1px solid; }
+  .nav-link-social-mobile li { text-align: center; }
+  .nav-link-social-mobile li i.fab { font-size: 1.8rem; color: #dd1864; } }
 
 .portfolioPage { position: relative; overflow-x: hidden; background: #1b0c11 !important; /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0c050a+0,1c0515+36,1c0515+36,1c0515+100&0+0,0.62+36,1+100 */ background: -moz-linear-gradient(top, rgba(26, 5, 21, 0.8) 0%, rgba(28, 5, 21, 0.9) 36%, #080106 100%); /* FF3.6-15 */ background: -webkit-linear-gradient(top, rgba(26, 5, 21, 0.8) 0%, rgba(28, 5, 21, 0.9) 36%, #080106 100%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(to bottom, rgba(26, 5, 21, 0.8) 0%, rgba(28, 5, 21, 0.9) 36%, #080106 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$pfGradientStart', endColorstr='$pfGradientEnd', GradientType=0); /* IE6-9 */ background-attachment: scroll; }
 

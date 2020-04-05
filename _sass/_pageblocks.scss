@@ -7,6 +7,14 @@
         h2{
             font-weight:800;
             font-size: 3rem;
+            @include respond-between(sm,md){
+            font-size:2.5rem;
+            margin-bottom:1rem;
+            }
+            @include respond-below(sm){
+                font-size: 2.2rem;
+                letter-spacing: -0.05rem;
+            }
         }
         &-image{
                 display: block;
@@ -22,5 +30,6 @@
                     background-position-y:15%;
                 }
             }
+            // block-about breakpoints
         }
     }

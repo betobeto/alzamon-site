@@ -1,10 +1,12 @@
-// Core.scss
+// Alzamon.com  - core.scss
+// ============================
 
+// z-index variables
 
-// Custom styles start here
+$zIndexMain: 4;
+$zIndexRopeScroller:3;
+$zIndexFooter: 2;
 
-
-// start styles
 
 * {
     color: white;
@@ -20,51 +22,169 @@ body {
         text-align: center;
     }
 
-    main{
+    main {
         position: relative;
-        z-index: 3;
-        .main-container{
+        z-index: $zIndexMain;
+
+        .main-container {
             background: $body-bg;
         }
-        .footer-scroll{
-            width: 100vw;
+
+        .footer-scroll {
+           
+            width: 33vw;
+            border: white 1px solid;
+            position: relative;
+            left: 35vw;
             min-height: 1200px;
             margin-bottom: -95vh;
             display: block;
             background: transparent;
             background: url('/assets/images/azm-footer-rope.png') no-repeat center top;
             background-size: contain;
+
+            // breakpoints
+            @include respond-between(sm, md) {
+                // tablets
+                width: 50vw;
+                left: 40vw;
+            }
+
+            @include respond-below(sm) {
+                // mobile
+                display: none;
+            }
         }
     }
 
-    footer{
+ // Daniel and Elias Rope image container
+    .ropeScroller{
+        width:30vw;
+        min-height: 1000px;
+        position: relative;
+        z-index: $zIndexRopeScroller;
+        left:36vw;
+        margin-bottom: -95vh;
+        background: url('/assets/images/azm-footer-rope.png') no-repeat center top;
+        background-size: contain;
+            // breakpoints
+            @include respond-between(sm, md) {
+                // tablets
+                left: 45vw;
+                width:45vw;
+            }
+            @include respond-between(md,lg){
+                margin-bottom: -90vh;
+            }
+            @include respond-below(sm){
+                display: none;
+                height: fit-content;
+            }
+    }
+
+    footer {
+        // actual links and copyright container
         background-color: rgb(99, 16, 61);
-        color:white;
+        color: white;
         position: sticky;
         bottom: 0;
-        width: 100vw;
-        height:95vh;
-        // min-height: 300px;
-        padding: 0 0 2rem 0;
-        // border: hotpink 2px dotted;
-        z-index:2;
-    }
+        height: 95vh;
+        z-index: $zIndexFooter;
 
+// footer breakpoints
 
-    .container {
-        width: 85vw;
-        // margin: 2rem auto;
-        padding: 1rem 0;
-
-        @include respond-below(md){
-            width: 86vw;
+        @include respond-between(md,lg){
+            height: 90vh;
         }
-    }
 
-    .gallery {
-        &-thumbnail {
-            border: $headerColor 1px dotted;
+        @include respond-below(sm) {
+            //mobile
+            height: auto;
         }
     }
 }
 
+.container {
+    width: 85vw;
+    // margin: 2rem auto;
+    padding: 1rem 0;
+
+    @include respond-below(md) {
+        width: 86vw;
+    }
+}
+
+.footer-container {
+    //container for small screens
+    margin: 4rem 0 0 0;
+
+    ul {
+        margin-top: 0.8rem;
+
+        li {
+            list-style: none;
+            height: 2rem;
+        }
+    }
+
+    p {
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+    }
+
+    // footer-container breakpoints
+
+    @include respond-between(sm, md) {
+
+        // tablets
+        ul {
+            min-width: 250px;
+            li {
+                margin-left: -30px;
+            }
+        }
+    }
+
+    @include respond-between(md,lg){
+        position: relative;
+        top: 30vw;
+    }
+
+    @include respond-below(sm) {
+        // position: relative;
+        // top:60px;
+        height: inherit;
+        background: $footerContainerBgColor;
+        padding: 2rem 2rem 1rem; 
+        margin: 0;
+
+        ul{
+            li{
+                font-size: smaller;
+                a{
+                    color:$linkColor;
+                }
+            }
+        }
+
+        p {
+            font-size: 0.8rem;
+            margin-bottom: 1rem;
+            text-align: center;
+            a{
+                color: $linkColor;
+            }
+            &:last-child{
+                display: block;
+                margin-bottom: 1rem !important;
+            }
+        }
+    }
+}
+
+
+.gallery {
+    &-thumbnail {
+        border: $headerColor 1px dotted;
+    }
+}

@@ -87,19 +87,55 @@ body { position: relative; background: #30292c; }
 
 body h1 { color: #ec229f; font-size: 4rem; text-align: center; }
 
-body main { position: relative; z-index: 3; }
+body main { position: relative; z-index: 4; }
 
 body main .main-container { background: #1b0c11; }
 
-body main .footer-scroll { width: 100vw; min-height: 1200px; margin-bottom: -95vh; display: block; background: transparent; background: url("/assets/images/azm-footer-rope.png") no-repeat center top; background-size: contain; }
+body main .footer-scroll { width: 33vw; border: white 1px solid; position: relative; left: 35vw; min-height: 1200px; margin-bottom: -95vh; display: block; background: transparent; background: url("/assets/images/azm-footer-rope.png") no-repeat center top; background-size: contain; }
 
-body footer { background-color: #63103d; color: white; position: sticky; bottom: 0; width: 100vw; height: 95vh; padding: 0 0 2rem 0; z-index: 2; }
+@media (min-width: 767px) and (max-width: 1023px) { body main .footer-scroll { width: 50vw; left: 40vw; } }
 
-body .container { width: 85vw; padding: 1rem 0; }
+@media (max-width: 766px) { body main .footer-scroll { display: none; } }
 
-@media (max-width: 1023px) { body .container { width: 86vw; } }
+body .ropeScroller { width: 30vw; min-height: 1000px; position: relative; z-index: 3; left: 36vw; margin-bottom: -95vh; background: url("/assets/images/azm-footer-rope.png") no-repeat center top; background-size: contain; }
 
-body .gallery-thumbnail { border: #ec229f 1px dotted; }
+@media (min-width: 767px) and (max-width: 1023px) { body .ropeScroller { left: 45vw; width: 45vw; } }
+
+@media (min-width: 1024px) and (max-width: 1199px) { body .ropeScroller { margin-bottom: -90vh; } }
+
+@media (max-width: 766px) { body .ropeScroller { display: none; height: fit-content; } }
+
+body footer { background-color: #63103d; color: white; position: sticky; bottom: 0; height: 95vh; z-index: 2; }
+
+@media (min-width: 1024px) and (max-width: 1199px) { body footer { height: 90vh; } }
+
+@media (max-width: 766px) { body footer { height: auto; } }
+
+.container { width: 85vw; padding: 1rem 0; }
+
+@media (max-width: 1023px) { .container { width: 86vw; } }
+
+.footer-container { margin: 4rem 0 0 0; }
+
+.footer-container ul { margin-top: 0.8rem; }
+
+.footer-container ul li { list-style: none; height: 2rem; }
+
+.footer-container p { font-size: 0.8rem; margin-bottom: 1rem; }
+
+@media (min-width: 767px) and (max-width: 1023px) { .footer-container ul { min-width: 250px; }
+  .footer-container ul li { margin-left: -30px; } }
+
+@media (min-width: 1024px) and (max-width: 1199px) { .footer-container { position: relative; top: 30vw; } }
+
+@media (max-width: 766px) { .footer-container { height: inherit; background: #1a020d; padding: 2rem 2rem 1rem; margin: 0; }
+  .footer-container ul li { font-size: smaller; }
+  .footer-container ul li a { color: #dd1864; }
+  .footer-container p { font-size: 0.8rem; margin-bottom: 1rem; text-align: center; }
+  .footer-container p a { color: #dd1864; }
+  .footer-container p:last-child { display: block; margin-bottom: 1rem !important; } }
+
+.gallery-thumbnail { border: #ec229f 1px dotted; }
 
 .jumbotron { margin-bottom: 0px; background-color: #291820; position: relative; z-index: 100; min-height: 260px; }
 
@@ -309,6 +345,10 @@ body .gallery-thumbnail { border: #ec229f 1px dotted; }
 .block-about { background-color: #dd1864; color: white; }
 
 .block-about h2 { font-weight: 800; font-size: 3rem; }
+
+@media (min-width: 767px) and (max-width: 1023px) { .block-about h2 { font-size: 2.5rem; margin-bottom: 1rem; } }
+
+@media (max-width: 766px) { .block-about h2 { font-size: 2.2rem; letter-spacing: -0.05rem; } }
 
 .block-about-image { display: block; background-image: url("../images/alzamon-avatar.png"); background-repeat: no-repeat; background-position: 100% 5%; background-size: 125%; min-height: 50vh; }
 

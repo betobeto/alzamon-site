@@ -61,22 +61,13 @@
 
         <!-- social links - mobile only -->
 <ul class="nav-link-social-mobile my-2 py-3">
-    <li>
-        <a href="https://instagram.com/alzamonart" tabindex="2" target="_blank" title="Alzamon on Instagram"><i class="fab fa-instagram"></i>&nbsp;</a>
-    </li>
-
-    <li>
-        <a href="#" tabindex="2" title="Alzamon on Behance"><i class="fab fa-behance"></i>&nbsp;</a>
-    </li>
-
-    <li>
-        <a href="https://www.twitter.com/alzamonart/" tabindex="2" title="Alzamon on Twitter"><i class="fab fa-twitter"></i>&nbsp;</a>
-    </li>
-
-    <li>
-        <a href="#" tabindex="3" aria-disabled="true" title="Alzamon on Deviantart"><i
-                class="fab fa-deviantart"></i>&nbsp;</a>
-    </li>
+        <!-- social media loop -->
+        {% for sm in site.data.socialmedia %}
+            <li>
+                <a href="{{sm.url}}" title="{{sm.text}}" target="_blank"><i class="fab {{sm.icon}}"></i>&nbsp;</a>
+            </li>
+        {% endfor %}
+        <!-- end social media loop -->
 </ul>
 
     </div>

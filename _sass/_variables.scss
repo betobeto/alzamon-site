@@ -18,6 +18,9 @@ $headerColor: rgb(236, 34, 159);
 $borderColor: rgb(174, 82, 11);
 $linkColor: rgb(221, 24, 100);
 $linkUnderlineColor: rgba(173,24,86,0.67);
+$footerLinkColor: lighten($linkColor, 40%);
+$btnDarkColor: darken($linkColor,40%);
+$btnDarkColorHover: lighten($linkColor,20%);
 
 // block element variables
 // ===================================

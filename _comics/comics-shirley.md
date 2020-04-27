@@ -29,6 +29,6 @@ comicpages:
       cp_thumb: /assets/images/comics/2017_cm_shirley_web10@400w.jpg
       cp_full: /assets/images/comics/2017_cm_shirley_web10@1500w.jpg 
 ---
-## Some words about this comic
+## About this comic
 
-Pommy ipsum a diamond geezer that's ace bog roll narky utter shambles leisurely nose rag, flabbergasted 10 pence mix I'd reet fancy a ended up brown bread horses for courses supper getting on my wick. Any road, best be off nicked goggledegook bowler hat skive, bovver boots a tenner one feels that in the goolies, Geordie come hither in the jacksy. They can sod off yorkshire mixture brown sauce accordingly nosh Weeping Angels leisurely bog roll.
+**Shirley Cruz** is a leading Costa Rican female soccer player with stellar experience on worldwide recognized teams such as France's PSG. However she came from both a poor family's background and a time where it wasn't well regarded for women to pursue a career in soccer, so she had to sneak in in many ingenious ways. This pilot comic plays around with the concept of Shirley as a little girl, getting her hair cut like a boy to get into the neighborhood's soccer team.

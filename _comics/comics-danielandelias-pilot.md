@@ -24,6 +24,6 @@ comicpages:
       cp_full: /assets/images/comics/2014_cm_danielElias03@1500w.jpg
 ---
 
-## Some words about this comic
+## About this comic
 
-Daniel and Elias are original characters I designed back in the 90s, ergo a long time ago. One of my persistent dreams is to create an ongoing comic or graphic novel series with them and this has been so far the closest I've got to it. I still think this came up fine as a result.
+Daniel and Elias are original characters I designed back in the 90s — so this has been a long time coming. One of my persistent goals is to create an ongoing comic or graphic novel series with them and this has been so far the closest I've gotten to it. I still think this came up fine as a result.

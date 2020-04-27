@@ -12,9 +12,18 @@
             margin-bottom:1rem;
             }
             @include respond-below(sm){
+                text-align: center;
                 font-size: 2.2rem;
+                margin-bottom: 1rem;
                 letter-spacing: -0.05rem;
             }
+        }
+        p, strong{
+            @include textCondensed;
+        }
+
+        a{
+            color: $footerLinkColor;
         }
         &-image{
                 display: block;

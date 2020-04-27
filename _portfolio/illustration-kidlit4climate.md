@@ -11,5 +11,5 @@ masonryimage: /assets/images/portfolio/2019_i_kidLit4Climate@400w.jpg
 fullsizeimage: /assets/images/portfolio/2019_i_kidLit4Climate@1500w.jpg
 work_details:
     - Digital Illustration, 2019
-    - "Tools used: Clip Studio Paint"
+    - This was done in response to a Twitter initiative named "#kidlit4Climate" joining other illustrators in creating images appealing to the preservation of our planet for upcoming generations. Being someone born and raised in the Costa Rican tropics, the idea of including both a sloth and a monkey amid a dense jungle came naturally.
 ---

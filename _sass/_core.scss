@@ -82,26 +82,7 @@ body {
             }
     }
 
-    footer {
-        // actual links and copyright container
-        background-color: rgb(99, 16, 61);
-        color: white;
-        position: sticky;
-        bottom: 0;
-        height: 95vh;
-        z-index: $zIndexFooter;
 
-// footer breakpoints
-
-        @include respond-between(md,lg){
-            height: 90vh;
-        }
-
-        @include respond-below(sm) {
-            //mobile
-            height: auto;
-        }
-    }
 }
 
 .container {
@@ -114,73 +95,6 @@ body {
     }
 }
 
-.footer-container {
-    //container for small screens
-    margin: 4rem 0 0 0;
-
-    ul {
-        margin-top: 0.8rem;
-
-        li {
-            list-style: none;
-            height: 2rem;
-        }
-    }
-
-    p {
-        font-size: 0.8rem;
-        margin-bottom: 1rem;
-    }
-
-    // footer-container breakpoints
-
-    @include respond-between(sm, md) {
-
-        // tablets
-        ul {
-            min-width: 250px;
-            li {
-                margin-left: -30px;
-            }
-        }
-    }
-
-    @include respond-between(md,lg){
-        position: relative;
-        top: 30vw;
-    }
-
-    @include respond-below(sm) {
-        // position: relative;
-        // top:60px;
-        height: inherit;
-        background: $footerContainerBgColor;
-        padding: 2rem 2rem 1rem; 
-        margin: 0;
-
-        ul{
-            li{
-                font-size: smaller;
-                a{
-                    color:$linkColor;
-                }
-            }
-        }
-
-        p {
-            font-size: 0.8rem;
-            margin-bottom: 1rem;
-            text-align: center;
-            a{
-                color: $linkColor;
-            }
-            &:last-child{
-                display: block;
-                margin-bottom: 1rem !important;
-            }
-        }
-    }
-}
 
 
 .gallery {

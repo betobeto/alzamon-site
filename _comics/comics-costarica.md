@@ -1,11 +1,11 @@
 ---
 layout: comics
-title: Costa Rica comic - Alzamon - Children's Illustration by Alberto Gonzalez
+title: Discovering Costa Rica - Alzamon - Children's Illustration by Alberto Gonzalez
 categories: 
     - homepage
     - comics
 pretty_category: Comics
-pretty_title: Costa Rica Comic
+pretty_title: Discovering Costa Rica
 permalink: /comics/costarica
 masonryimage: /assets/images/comics/2016_cm_costaRicaAng01@400w.jpg
 fullsizeimage: /assets/images/comics/2016_cm_costaRicaAng01@900w.jpg
@@ -23,6 +23,6 @@ comicpages:
       cp_thumb: /assets/images/comics/2016_cm_costaRicaAng04@400w.jpg
       cp_full: /assets/images/comics/2016_cm_costaRicaAng04@1500w.jpg  
 ---
-## Some words about this comic
+## About this comic
 
-On early 2016 I attended the [European comics festival at Angoulême, France](https://www.bdangouleme.com/) — a longtime dream of mine. Because I knew barely any other Costa Rican had been there, I thought about making a 4-page comic using my characters showing facts about Costa Rica in French as a giveaway. I think I printed about 50 copies or so. Once there I also realized I had still a long time to go before even being considered "publishable" by the editorial houses over there... but the worst attempt is the one that is never done, right?
+On early 2016 I attended the [European comics festival at Angoulême, France](https://www.bdangouleme.com/) — a longtime dream of mine. Because barely any other Costa Rican has even been there, I thought about making a 4-page comic using my characters showing facts about Costa Rica in French as a giveaway. About 50 copies were printed. I also learned that in regards of being considered by European publishing houses, the bar had to be set much higher than this... but that is another story.

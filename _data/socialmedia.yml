@@ -1,17 +1,21 @@
 # Alzamon Social Media links
 
-- text: Alzamon on Instagram
+- text: Instagram
+  textDesc: Alzamon on Instagram (@alzamonart)
   url: https://www.instagram.com/alzamonart
   icon: fa-instagram
 
-- text: Alzamon on Behance
+- text: Behance
+  textDesc: Alzamon on Behance
   url: https://www.behance.net/alzamon
   icon: fa-behance
 
-- text: Alzamon on Twitter
+- text: Twitter
+  textDesc: Alzamon on Twitter (@alzamonart)
   url: https://www.twitter.com/alzamonart
   icon: fa-twitter
 
-- text: Alzamon on Deviantart
+- text: Deviantart
+  textDesc: Alzamon on DeviantArt
   url: https://www.deviantart.com/alzamonart
   icon: fa-deviantart

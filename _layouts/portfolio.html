@@ -37,6 +37,21 @@ layout: default
         </div>
     </div>
     {% include row-separator.html %}
+{% elsif page.additionalContent %}
+<h4>Additional Images</h4>
+<!-- display additional images if any -->
+    <div id="comicPages" class="row my-4">
+        {% for item in page.additionalContent %}
+        <a href="{{item.ac_full}}">
+            <img src="{{item.ac_thumb}}" alt="{{item.ac_name}}">
+        <div class="thumbnailOverlay">
+            <i class="fas fa-search"></i>
+        </div>
+        <span>{{item.ac_name}}</span>
+        </a>
+        {% endfor %}
+    </div>
+    {% include row-separator.html %}
 {% endif %}
 <!-- /end content if content -->
 

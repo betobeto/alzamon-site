@@ -99,6 +99,17 @@
     /* IE6-9 */
 }
 
+//footergradient
+
+@mixin footerGradient(){
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ed156f+0,770a38+39,770a38+40,38051a+90 */
+background: rgb(237,21,111); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(237,21,111,1) 0%, rgba(119,10,56,1) 20%, rgba(56,5,26,1) 70%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(237,21,111,1) 0%,rgba(119,10,56,1) 20%,rgba(56,5,26,1) 70%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(237,21,111,1) 0%,rgba(119,10,56,1) 20%,rgba(56,5,26,1) 70%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed156f', endColorstr='#38051a',GradientType=0 ); /* IE6-9 */
+}
+
 // previous - next portfolio item gradients
 @mixin gradientBgPrev() {
     background: -moz-linear-gradient($prevDeg, $prevColor0, $prevColor1, $prevColor2, $prevColor3, $prevColor4);

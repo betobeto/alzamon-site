@@ -1,17 +1,83 @@
 ---
 layout: default
-title: About - Alzamon
+title: Alzamon — Children's Illustration, Comics and Sketchbook Portfolio — About the Author
+description: Description page with info of this illustration portfolio site's author, plus contact form.
 ---
+
+{% assign social = site.data.socialmedia %}
 
 <div class="container">
     <div class="row">
-        <div class="col">
-            
-            <h2>About Me</h2>
-            
+        <div class="col-md-10 offset-md-1 d-flex flex-column py-4">
+
+            <h1>About The Author</h1>
+
+            <img src="/assets/images/azm-aboutpage-art.png"
+                alt="Illustration of the author featuring his main characters" class="align-self-center mb-3">
+
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptatibus fugiat quae nesciunt laborum, soluta praesentium. Nihil sit, at, alias veritatis laborum enim iste, odit delectus impedit modi quibusdam quos.
+                Thank you for stopping by. I am <strong>Alberto</strong>, a Costa Rica-based illustrator and graphics artist with a degree from the <strong>University of Costa Rica</strong> in graphics design. <strong>Alzamon</strong> is the artistic pseudonym I've adopted, composed from fragments of my full name. I also work as a web front end and User Experience (UX) developer. In fact this site has been entirely built in code by yours truly, having complete control. Here I am focusing on my <a href="/portfolio/">Children's Illustration and Character Design portfolio</a> in order to get work opportunities in this regard.
             </p>
+
+            <p>I am currently <strong>looking for agent representation</strong> in illustration affairs, specially children's-oriented illustration, comic books and/or graphic novels. I provide more than <strong>20 years of professional experience and responsibility</strong> to take on any assignment.</p>
+
+
+            <h3>How to Contact Me</h3>
+
+            <p>Have you checked out my social media sites? Go and follow me there. You're welcome.</p>
+
+            <div class="row d-flex my-4">
+                {% for item in social %}
+                <div class="col-md-3 redline text-center"><a href="{{item.url}}" target="_blank">{{item.text}}</a></div>
+                {% endfor %}
+            </div>
+        
+            <div class="row">
+                <div class="col my-4">
+                    <h3>Contact Form</h3>
+                    <p class="my-4">You can also contact me here. I will geet back to you as soon as possible.</p>
+                    <!-- formspree.io form -->
+                    <form id="fs-frm" action="https://formspree.io/mleprdrd" method="POST">
+                        <fieldset id="fs-frm-inputs">
+                            <input type="hidden" name="_subject" value="Alzamon.com — Sent from contact form" />
+                            <!-- sender name -->
+                            <div class="form-group">
+                                <label for="azmForm_name">Your Name:</label>
+                                <input id="azmForm_name" class="form-control" type="text" name="_name">
+                            </div>
+                            <!-- sender email -->
+                            <div class="form-group">
+                                <label for="azmForm_email">Your Email:</label>
+                                <input id="azmForm_email" class="form-control" type="email" name="_replyto"
+                                    placeholder="yourname@somesite.com">
+                            </div>
+                            <!-- sender message type -->
+                            <div class="form-group">
+                                <label for="azmForm_messageType">Which of these best fits your message?</label>
+                                <select class="form-control" id="azmForm_messageType" name="messageType">
+                                    <option value="Select" selected="" disabled="
+                                ">Select one...</option>
+                                    <option value="General question">General question</option>
+                                    <option value="Business Inquire">Business inquire</option>
+                                    <option value="Service Pricing">Service pricing</option>
+                                    <option value="Literary Agent">Literary agent contact</option>
+                                    <option value="Other">Other (please specify below)</option>
+                                </select>
+                            </div>
+                            <!-- sender message -->
+                            <div class="form-group">
+                                <label for="azmForm_message">Your Message:</label>
+                                <textarea id="azmForm_message" class="form-control" name="message" rows="8"
+                                    cols="30"></textarea>
+                            </div>
+                        </fieldset>
+                        <!-- your other form fields go here -->
+                        <button type="submit" class="btn btn-dark btn-lg">Send Message</button>
+                    </form>
+                    <!-- /end formspress.io form -->
+                </div>
+            </div>
+
         </div>
     </div>
 </div>

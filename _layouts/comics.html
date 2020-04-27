@@ -23,14 +23,17 @@ layout: default
 
     <!-- show thumbnails grid-->
 
+    <h2>Comic Pages</h2>
+
         {% if page.comicpages %}
         <div id="comicPages" class="row my-4">
             {% for item in page.comicpages %}
-            <a href="{{item.cp_full}}">
+            <a href="{{item.cp_full}}" title="{{item.cp_name}}">
                 <img src="{{item.cp_thumb}}" alt="{{item.cp_name}}">
             <div class="thumbnailOverlay">
                 <i class="fas fa-search"></i>
             </div>
+            <span>{{item.cp_name}}</span>
             </a>
             {% endfor %}
         </div>

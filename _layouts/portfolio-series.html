@@ -1,0 +1,111 @@
+---
+layout: default
+---
+
+{%- comment -%}
+Layout page for portfolio series category posts, for character design etc.
+{%- endcomment -%}
+
+<!-- variable to filter content from MD line breaks  -->
+{% assign pageContent = page.content | strip_newlines %}
+
+<div id="portfolio-item" class="portfolio-series container">
+    <!-- title -->
+    <div class="row">
+        <div class="col">
+            <h2 class="my-3 text-center"><span>{{page.pretty_category}} /</span> {{page.pretty_title}}</h2>
+        </div>
+    </div>
+    <!--  main image -->
+    <div class="row d-flex flex-column align-items-center">
+        <div class="col-md-9">
+            <img src="{{page.fullsizeimage}}" alt="{{page.title}}" class="img-fluid">
+        </div>
+    </div>
+
+    {% include row-separator.html %}
+
+<!-- Print content if Markdown content is not empty -->
+{% if pageContent != '' %}
+    <div class="row portfolio-item-content my-4">
+        <div class="col">
+            {%- comment -%}
+            ========================================
+            Text content in Markdown file goes here
+            ========================================
+            {%- endcomment -%}
+
+            {{content}}
+        </div>
+    </div>
+    {% include row-separator.html %}
+{% endif %}   
+
+    <!-- Portfolio series image gallery -->
+    {% if page.extraimages %}
+    <div id="comicPages" class="row my-4">
+        {% for item in page.extraimages %}
+        <a href="{{item.ei_full}}" title="{{item.ei_name}}">
+            <img src="{{item.ei_thumb}}" alt="{{item.ei_name}}">
+        <div class="thumbnailOverlay">
+            <i class="fas fa-search"></i>
+        </div>
+        <span>{{item.cp_name}}</span>
+        </a>
+        {% endfor %}
+    </div>
+    {% include row-separator.html %}
+    {% endif %}
+
+
+<!-- Start additional images -->
+<!-- to enable section remove the comment/endcomment Liquid tags around the code -->
+
+{% comment %}
+{% if page.extraimages %}
+<div class="row portfolio-item-extras">
+    <div class="col">
+        <h2>Related images</h2>
+    </div>
+</div>
+<div class="row d-flex my-4">
+    <!-- adjust col-md value according to number of present extraimages -->
+    {% for item in page.extraimages %}
+        <div class="col{% if forloop.length == 1 %}-md-6 offset-md-3 d-flex justify-content-center{% elsif forloop.length == 2 %}-md-4 d-flex justify-content-center{%elsif forloop.length == 3%}-md-4 d-flex justify-content-center{%elsif forloop.length > 3%}-md-3 d-flex justify-content-center{% endif %}">
+            <img src="{{item}}" alt="Image">
+        </div>     
+    {% endfor %}
+</div>
+{% include row-separator.html %}
+{% endif %}
+{% endcomment %}
+
+<!-- /end additional images -->
+
+<!-- previous-next -->
+<div class="row mx-0 row-cols-2 d-flex portfolio-previousNext">
+    <div class="col-xs-6 d-flex justify-content-start">
+        {% if page.previous.url %}
+        <!-- Previous portfolio page -->
+            <a href="{{page.previous.url}}" class="portfolio-previous">
+            <i class="fas fa-chevron-left"></i>
+                <img src="{{page.previous.masonryimage}}" alt="{{page.previous.title}}">
+                    <span class="d-none d-sm-block"><strong>{{page.previous.pretty_title}}</strong> / {{page.previous.pretty_category}}</span>
+                </a>           
+        {% endif %}
+
+    </div>
+    <div class="col-xs-6 d-flex justify-content-end">
+        {% if page.next.url %}
+            <a href="{{page.next.url}}" class="portfolio-next">
+                <span class="d-none d-sm-block"><strong>{{page.next.pretty_title}}</strong> / {{page.next.pretty_category}}</span>
+            </span>   
+                <img src="{{page.next.masonryimage}}" alt="{{page.next.title}}">
+            <i class="fas fa-chevron-right"></i>
+        </a>
+        {% endif %}
+    </div>
+</div>
+<!-- end previous-next -->
+
+</div>

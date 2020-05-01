@@ -11,12 +11,23 @@ author: alzamonart
             <p class="my-2">If this is what you are looking for, I welcome you to know my work and about me further below.</p>
         </div>
     </div>
+
+    <!-- <div class="row">
+        <div class="col">
+            <pre style="color:white">{{ site.portfolio | sort: "sort_number" | inspect }}</pre> 
+        </div>
+    </div> -->
+
+
     <div class="row">
         <div class="col">
+
+          
             <!-- Portfolio Masonry -->
             <div class="portfolio-masonry">
-                <!-- Show *only* items matching the "homepage" category -->
-                {% assign hp = site.portfolio | where: "categories", "homepage" %}
+                <!-- Show *only* items matching the "homepage" category and sort by the "sort_number" variable-->
+                <!-- use reverse switch to display latest (in number) posts -->
+                {% assign hp = site.portfolio | where:"categories", "homepage" | sort: "sort_number" | reverse %}
                 {% for item in hp %}
                 <!-- masonry item -->
                 <div class="portfolio-masonry-item">

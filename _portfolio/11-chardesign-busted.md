@@ -7,6 +7,7 @@ categories:
 pretty_category: Character Design
 pretty_title: Busted
 permalink: /portfolio/characterdesign/busted
+sort_number: 11
 masonryimage: /assets/images/portfolio/2018_cd_busted@400w.png
 fullsizeimage: /assets/images/portfolio/2018_cd_busted@1500w.png
 work_details:

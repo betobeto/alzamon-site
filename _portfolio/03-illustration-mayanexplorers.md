@@ -6,6 +6,7 @@ categories:
     - illustration
 pretty_category: Illustration
 pretty_title: Mayan Explorers
+sort_number: 03
 permalink: /portfolio/illustration/mayanexplorers
 masonryimage: /assets/images/portfolio/2015_i_explorersOne@400w.jpg
 fullsizeimage: /assets/images/portfolio/2015_i_explorersOne@1500w.jpg

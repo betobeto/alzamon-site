@@ -7,6 +7,7 @@ categories:
 pretty_category: Illustration
 pretty_title: "School's Out"
 permalink: /portfolio/illustration/schools-out
+sort_number: 09
 masonryimage: /assets/images/portfolio/2012_i_schoolOver@400w.jpg
 fullsizeimage: /assets/images/portfolio/2012_i_schoolOver@1500w.jpg
 work_details:
@@ -24,3 +25,7 @@ additionalContent:
       ac_thumb: /assets/images/portfolio/2019_fa_calvinAndHobbes@400w.jpg
       ac_full: /assets/images/portfolio/2019_fa_calvinAndHobbes@1500w.jpg
 ---
+
+## Additional content
+
+This is a paragraph of additional content. Where will it go?

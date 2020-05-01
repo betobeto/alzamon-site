@@ -7,6 +7,7 @@ categories:
 pretty_category: Illustration
 pretty_title: Le Petit Prince
 permalink: /portfolio/illustration/lepetitprince
+sort_number: 06
 masonryimage: /assets/images/portfolio/2017_i_petitPrince@400w.jpg
 fullsizeimage: /assets/images/portfolio/2017_i_petitPrince@1500w.jpg
 work_details:

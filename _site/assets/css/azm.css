@@ -29,6 +29,14 @@ input, button, textarea, select { font: inherit; }
 /* Remove all animations and transitions for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) { * { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; } }
 
+[style*="--aspect-ratio"] > :first-child { width: 100%; }
+
+[style*="--aspect-ratio"] > img { height: auto; }
+
+@supports (--custom: property) { [style*="--aspect-ratio"] { position: relative; }
+  [style*="--aspect-ratio"]::before { content: ""; display: block; padding-bottom: calc(100% / (var(--aspect-ratio))); }
+  [style*="--aspect-ratio"] > :first-child { position: absolute; top: 0; left: 0; height: 100%; } }
+
 h1, h2, h3, h4 { font-weight: 700; }
 
 p, strong, ul, ol, li { font-family: 'Open Sans', sans-serif; }
@@ -320,6 +328,8 @@ body .ropeScroller { width: 30vw; min-height: 1000px; position: relative; z-inde
 
 @media (max-width: 766px) { #comicPages { grid-template-columns: 46% 46%; } }
 
+.portfolio-series h2, .portfolio-series h3 { text-align: center !important; }
+
 .posts-grid { padding: 0; }
 
 .posts-grid ul { display: grid; grid-column-gap: 2rem; grid-row-gap: 2rem; column-fill: auto; }
@@ -335,6 +345,8 @@ body .ropeScroller { width: 30vw; min-height: 1000px; position: relative; z-inde
 .posts-grid ul li:hover { background: -moz-linear-gradient(top, rgba(203, 96, 179, 0) 0%, rgba(193, 70, 161, 0.2) 25%, rgba(186, 54, 134, 0.4) 50%, rgba(173, 24, 86, 0.8) 80%, #ad1856 100%); background: -webkit-linear-gradient(top, rgba(203, 96, 179, 0) 0%, rgba(193, 70, 161, 0.2) 25%, rgba(186, 54, 134, 0.4) 50%, rgba(173, 24, 86, 0.8) 80%, #ad1856 100%); background: linear-gradient(to bottom, rgba(203, 96, 179, 0) 0%, rgba(193, 70, 161, 0.2) 25%, rgba(186, 54, 134, 0.4) 50%, rgba(173, 24, 86, 0.8) 80%, #ad1856 100%); -moz-transition: background 1s ease-in-out; -webkit-transition: background 1s ease-in-out; transition: background 1s ease-in-out; }
 
 .posts-grid ul li:hover a h6, .posts-grid ul li:hover a span { color: white !important; }
+
+.posts-grid ul li a:hover { text-decoration: none !important; }
 
 @media (max-width: 766px) { .posts-grid ul { grid-template-columns: 88%; column-count: 1; } }
 
@@ -372,11 +384,13 @@ body .ropeScroller { width: 30vw; min-height: 1000px; position: relative; z-inde
 
 .block-about a { color: #f9c8db; }
 
-.block-about-image { display: block; background-image: url("../images/alzamon-avatar.png"); background-repeat: no-repeat; background-position: 100% 5%; background-size: 125%; min-height: 50vh; }
+.block-about-image { display: block; background-image: url("../images/alzamon-avatar.png"); background-repeat: no-repeat; background-position: 100% 5%; background-size: 100%; min-height: 50vh; }
 
-@media (min-width: 767px) and (max-width: 1023px) { .block-about-image { background-position: 70% 100%; } }
+@media (min-width: 1024px) and (max-width: 1199px) { .block-about-image { background-position: 90% 100%; background-size: 150%; } }
 
-@media (max-width: 766px) { .block-about-image { background-position-y: 15%; } }
+@media (min-width: 767px) and (max-width: 1023px) { .block-about-image { background-position: 85% 100%; background-size: 140%; } }
+
+@media (max-width: 766px) { .block-about-image { background-position-y: 15%; background-size: cover; } }
 
 footer { /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ed156f+0,770a38+39,770a38+40,38051a+90 */ background: #ed156f; /* Old browsers */ background: -moz-linear-gradient(top, #ed156f 0%, #770a38 20%, #38051a 70%); /* FF3.6-15 */ background: -webkit-linear-gradient(top, #ed156f 0%, #770a38 20%, #38051a 70%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(to bottom, #ed156f 0%, #770a38 20%, #38051a 70%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed156f', endColorstr='#38051a',GradientType=0 ); /* IE6-9 */ background-color: #63103d; color: white; position: sticky; bottom: 0; height: 95vh; z-index: 2; }
 

@@ -4,12 +4,12 @@ title: Illustrations - Alzamon
 permalink: /portfolio/
 ---
 {% comment %}
-========================================================
-Portfolio page: set source variable on Assign tag below
-========================================================
+=======================================================================
+Portfolio page: set source variable and conditions on Assign tag below
+=======================================================================
 {% endcomment %}
 
-{% assign pf = site.portfolio %}
+{% assign pf = site.portfolio | where: "categories", "illustration" | sort: "sort_number" | reverse %}
 
 <div class="container portfolio-category">
     <div class="row">

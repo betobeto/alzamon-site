@@ -30,13 +30,19 @@
                 background-image: url('../images/alzamon-avatar.png');
                 background-repeat: no-repeat;
                 background-position: 100% 5%;
-                background-size: 125%;
+                background-size: 100%;
                 min-height:50vh;
+                @include respond-between(md,lg){
+                    background-position: 90% 100%;
+                    background-size: 150%;
+                }
                 @include respond-between(sm,md){
-                    background-position: 70% 100%;
+                    background-position: 85% 100%;
+                    background-size: 140%;
                 }
                 @include respond-below(sm){
                     background-position-y:15%;
+                    background-size: cover;
                 }
             }
             // block-about breakpoints

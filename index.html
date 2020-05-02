@@ -27,6 +27,10 @@ author: alzamonart
             <div class="portfolio-masonry">
                 <!-- Show *only* items matching the "homepage" category and sort by the "sort_number" variable-->
                 <!-- use reverse switch to display latest (in number) posts -->
+
+                <div class="grid-sizer"></div>
+                <div class="gutter-sizer"></div>
+
                 {% assign hp = site.portfolio | where:"categories", "homepage" | sort: "sort_number" | reverse %}
                 {% for item in hp %}
                 <!-- masonry item -->
@@ -52,5 +56,3 @@ author: alzamonart
 {% include block-about.html %}
 
 {% include ig-lightwidget.html %}
-
-

@@ -8,7 +8,7 @@ pretty_category: Comics
 pretty_title: Daniel & Elias (Pilot 2014)
 permalink: /comics/danielandelias-pilot
 masonryimage: /assets/images/comics/2014_cm_danielElias01@400w.jpg
-fullsizeimage: /assets/images/comics/2014_cm_danielElias01@900w.jpg
+fullsizeimage: /assets/images/comics/2014_cm_danielElias01@1500w.jpg
 comicpages:
     - cp_name: Daniel & Elias Pilot - Page 1
       cp_thumb: /assets/images/comics/2014_cm_danielElias01@400w.jpg

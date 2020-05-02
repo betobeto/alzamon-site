@@ -5,8 +5,8 @@
 // ===================
 
 @mixin textCondensed{
-    line-height: 2.2rem;
-    font-size: 1.4rem;
+    line-height: 2rem;
+    font-size: 1.2rem;
     font-family: 'Open Sans Condensed', sans-serif;
 }
 @mixin textCondensedLabel{
@@ -41,12 +41,10 @@ h1, h2, h3, h4, h5, h6,
 
 // navbar
 #azmNav{
-    ul li{
-        font-family: 'Open Sans Condensed', Arial, Helvetica, sans-serif;
-        font-size:1.6rem;
+        ul li{
+            font-family: 'Open Sans Condensed', Arial, Helvetica, sans-serif;
     }
 }
-
 
 
 //blog font styles

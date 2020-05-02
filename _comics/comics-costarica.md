@@ -8,7 +8,7 @@ pretty_category: Comics
 pretty_title: Discovering Costa Rica
 permalink: /comics/costarica
 masonryimage: /assets/images/comics/2016_cm_costaRicaAng01@400w.jpg
-fullsizeimage: /assets/images/comics/2016_cm_costaRicaAng01@900w.jpg
+fullsizeimage: /assets/images/comics/2016_cm_costaRicaAng01@1500w.jpg
 comicpages:
     - cp_name: Costa Rica Kids Comic Page 1
       cp_thumb: /assets/images/comics/2016_cm_costaRicaAng01@400w.jpg

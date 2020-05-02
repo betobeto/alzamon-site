@@ -1,7 +1,7 @@
 ---
 layout: posts
 title: Stuff happens
-postimage: /assets/images/portfolio/2012_i_schoolOver@900w.jpg
+postimage: /assets/images/portfolio/2012_i_schoolOver@1500w.jpg
 postimagesmall: /assets/images/portfolio/2012_i_schoolOver@400w.jpg
 ---
 

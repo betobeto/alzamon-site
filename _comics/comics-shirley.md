@@ -8,7 +8,7 @@ pretty_category: Comics
 pretty_title: Shirley (comic pilot)
 permalink: /comics/shirley
 masonryimage: /assets/images/comics/2017_cm_shirley_web@400w.jpg
-fullsizeimage: /assets/images/comics/2017_cm_shirley_web@900w.jpg
+fullsizeimage: /assets/images/comics/2017_cm_shirley_web@1500w.jpg
 comicpages:
     - cp_name: Shirley Comic Pilot - Page 1
       cp_thumb: /assets/images/comics/2017_cm_shirley_web5@400w.jpg

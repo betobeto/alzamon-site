@@ -48,54 +48,66 @@ $portfolioPagePrevNextIndex: 2;
         }
     }
 
-    &-masonry {
-        // portfolio masonry pages
-        // set masonry global values
-        transition: all .022s ease-in-out;
-        column-gap: $portfolioMasonryColumnGap;
-        column-fill: auto;
 
-        // define masonry item attributes
-        &-item {
-            padding: $portfolioMasonryItemPadding;
+    &-masonry{
+        &-item{
             background: $portfolioItemBgColor;
-            margin-bottom: $portfolioMasonryColumnGap;
-            display: inline-block; // Fix the misalignment of items 
-            vertical-align: top; // Keep the item on the very top 
+        p {
+            margin: 0.4rem 0 0 0;
+            color: $portfolioMasonryTitleColor;
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-size: 0.8rem;
+            text-align: center;
 
-            img {
-                // portfolio thumb image
-                position: relative;
-                z-index: 2;
-                transition: all .5s ease-in-out;
-                backface-visibility: hidden; // Remove Image flickering on hover
-            }
-
-            p {
-                margin: 0.4rem 0 0 0;
-                color: $portfolioMasonryTitleColor;
+            strong {
                 font-family: 'Open Sans Condensed', sans-serif;
-
-                strong {
-                    font-family: 'Open Sans Condensed', sans-serif;
-                    color: $portfolioItemLinkColor;
-                    font-size: 1rem;
-                    letter-spacing: -0.03rem;
-                }
+                color: $portfolioItemLinkColor;
+                letter-spacing: -0.03rem;
             }
         }
 
-        // breakpoints
-        @include respond-between(sm, lg) {
-            column-count: 2;
+            // portfolio masonry item breakpoints
+
+            @include respond-above(lg){
+            width:23.5%;
+            margin-bottom:2%;
+            }
+            @include respond-between(md,lg){
+            //ipad Pro +
+            width:31%;
+            margin-bottom: 3%;
+            }
+            @include respond-between(sm,md){
+            //ipad
+                width:46.5%;
+                margin-bottom: 6%;
+            }
+            @include respond-below(sm){
+                margin-bottom:16px;
+            }
+        }
+        .grid-sizer{ // CSS hack for Isotope masonry script
+            @include respond-above(lg){
+                width:23.5%;
+            }
+            @include respond-between(md,lg){
+                width: 31%;
+            }
+            @include respond-between(sm,md){
+                width:48%;
+            }
         }
 
-        @include respond-above(lg) {
-            column-count: 3;
-        }
-
-        @include respond-below(sm) {
-            top: 80px;
+        .gutter-sizer{ //CSS hack for Isotope vertical spacing
+            @include respond-above(lg){
+                width:1.95%;
+            }
+            @include respond-between(md,lg){
+                width: 2.9%;
+            }
+            @include respond-between(sm,md){
+                width:3.5%;
+            }
         }
     }
 
@@ -109,7 +121,7 @@ $portfolioPagePrevNextIndex: 2;
 
             &.portfolio-previous,
             &.portfolio-next {
-                text-decoration: none;
+                text-decoration: none !important;
                 display: flex;
                 align-items: center;
                 transition: all 0.5 ease-in-out;
@@ -128,7 +140,9 @@ $portfolioPagePrevNextIndex: 2;
                 }
 
                 a {
-                    text-decoration: none;
+                    &:hover{
+                        text-decoration: none !important;
+                    }
                 }
 
                 span {
@@ -215,7 +229,6 @@ $portfolioPagePrevNextIndex: 2;
 .portfolio-masonry-item {
     a {
         // container item
-        @include masonryBoxShadow;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;

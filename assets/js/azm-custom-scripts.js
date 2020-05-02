@@ -12,4 +12,19 @@ $(document).ready(function () {
         download:false,
         selector: "a"
     }); 
+
+    // Isotope: set var + enable
+    var $pMasonry = $('.portfolio-masonry').imagesLoaded(
+        function(){
+            $pMasonry.isotope({
+                itemSelector: '.portfolio-masonry-item',
+                percentPosition:true,
+                masonry: {
+                    // use outer width of grid-sizer for columnWidth and gutter-sizer for vertical spacing
+                    columnWidth: '.grid-sizer',
+                        gutter: '.gutter-sizer'
+            }
+        });
+    });
+// end
 });

@@ -12,14 +12,13 @@
         background-position: center center;
         background-size: contain;
         display: inline-block;
-        width: 280px;
-        height: 130px;
+        width: 300px;
+        // height: 130px;
+        &.display-4{
+            font-size: 5rem;
+        }
         >span {
             @include hideText;
-        }
-        @include respond-below(md) {
-            width: 200px;
-            height: 90px;
         }
     }
     @include respond-below(sm) {
@@ -54,6 +53,15 @@
             // each item
             .nav-link {
                 margin-right: 1rem;
+                @include respond-above(lg){
+                    font-size:1.6rem;
+                }
+                @include respond-between(sm,md){
+                    font-size: 1.3rem;
+                }
+                @include respond-below(sm){
+                    font-size:1.6rem;
+                }
                 &.social {
                     // social networks icons
                     i {

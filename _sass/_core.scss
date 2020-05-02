@@ -59,27 +59,28 @@ body {
 
  // Daniel and Elias Rope image container
     .ropeScroller{
-        width:30vw;
-        min-height: 1000px;
-        position: relative;
-        z-index: $zIndexRopeScroller;
-        left:36vw;
-        margin-bottom: -95vh;
-        background: url('/assets/images/azm-footer-rope.png') no-repeat center top;
-        background-size: contain;
-            // breakpoints
-            @include respond-between(sm, md) {
-                // tablets
-                left: 45vw;
-                width:45vw;
-            }
-            @include respond-between(md,lg){
-                margin-bottom: -90vh;
-            }
-            @include respond-below(sm){
-                display: none;
-                height: fit-content;
-            }
+        display:none;
+        // width:30vw;
+        // min-height: 1000px;
+        // position: relative;
+        // z-index: $zIndexRopeScroller;
+        // left:36vw;
+        // margin-bottom: -95vh;
+        // background: url('/assets/images/azm-footer-rope.png') no-repeat center top;
+        // background-size: contain;
+        //     // breakpoints
+        //     @include respond-between(sm, md) {
+        //         // tablets
+        //         left: 45vw;
+        //         width:45vw;
+        //     }
+        //     @include respond-between(md,lg){
+        //         margin-bottom: -90vh;
+        //     }
+        //     @include respond-below(sm){
+        //         display: none;
+        //         height: fit-content;
+        //     }
     }
 
 

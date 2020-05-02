@@ -40,7 +40,7 @@ function checkPath(done) {
 
 function copyImages(done){
     // define generated img sizes
-    [400,900,1500].forEach(function(size){
+    [400,1500].forEach(function(size){
       return gulp.src(paths.imgSrcPortfolio)
       // do resizing and renaming
       .pipe(imageresize({ width: size }))

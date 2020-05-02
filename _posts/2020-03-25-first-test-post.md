@@ -1,7 +1,7 @@
 ---
 layout: posts
 title: Welcome to my first test post
-postimage: /assets/images/portfolio/2014_i_sunsetChase@900w.jpg
+postimage: /assets/images/portfolio/2014_i_sunsetChase@1500w.jpg
 postimagesmall: /assets/images/portfolio/2014_i_sunsetChase@400w.jpg
 ---
 

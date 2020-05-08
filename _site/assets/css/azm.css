@@ -402,7 +402,9 @@ body .ropeScroller { display: none; }
 
 @media (max-width: 766px) { .block-about-image { background-position-y: 15%; background-size: cover; } }
 
-footer { background-image: url("/assets/images/azm-bg-selfies-alpha-flat.png"), linear-gradient(to bottom, #ed156f 0%, #99164d 35%, #38051a 70%); background-position: 100% 120%; background-repeat: no-repeat; background-attachment: fixed; color: white; }
+footer { background-image: url("/assets/images/azm-bg-footer-alpha-hires.png"), linear-gradient(to bottom, #1a020c 0%, #330518 40%, #bb1258 95%); background-position: 100% 100%; background-repeat: no-repeat; background-attachment: fixed; color: white; }
+
+@media (min-width: 1024px) { footer .container { padding: 0; } }
 
 @media (min-width: 767px) and (max-width: 1023px) { footer { background-attachment: scroll; } }
 
@@ -418,7 +420,7 @@ footer { background-image: url("/assets/images/azm-bg-selfies-alpha-flat.png"), 
 
 .footer-container p { font-size: 0.8rem; margin-bottom: 1rem; }
 
-.footer-container p a { color: #f9c8db; }
+.footer-container p a { color: #fcdfea !important; text-decoration: underline; }
 
 @media (min-width: 767px) and (max-width: 1023px) { .footer-container ul { min-width: 250px; }
   .footer-container ul li { margin-left: -30px; } }

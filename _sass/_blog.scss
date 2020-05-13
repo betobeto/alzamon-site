@@ -54,22 +54,26 @@
                 color: $blogHeaderColor;
                 + span{
                     color: $blogTextColor;
+                    font-size:larger;
                 }
             }
             .col {
                 background: white;
                 padding: 0 2rem;
-                h3{
+                h3 {
                     color: $blogHeaderColor;
                     margin: 1.6rem 0 1rem 0;
-
                 }
                 p{
-                    color:$blogTextColor !important;
-                    margin: 0.5rem 0;
-                    font-size: 120%;
-            }
+                    color: $blogTextColor !important;
+                    font-size: 130%;
+                    margin: 1.5rem 0;
                 }
+                em, strong{
+                    font-size: 110%;
+                    color: $blogTextColor !important;
+                }
+            }
                 &-picture{
                     position: relative;
                     z-index: 10;

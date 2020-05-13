@@ -40,11 +40,13 @@ $portfolioPagePrevNextIndex: 2;
 // =======================================
 .portfolio {
     &-category {
-
         // portfolio category pages
         h2 {
             color: $portfolioHeaderColor;
             font-size: 4rem;
+        }
+        &-description{
+            font-size: 2rem !important;
         }
     }
 

@@ -2,6 +2,7 @@
 
 # base URL  - change when online
 #url: "http://localhost:4000"
+encoding: UTF-8
 
 defaults:
   - scope:

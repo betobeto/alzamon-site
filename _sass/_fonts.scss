@@ -6,12 +6,12 @@
 
 @mixin textCondensed{
     line-height: 2rem;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-family: 'Open Sans Condensed', sans-serif;
 }
 @mixin textCondensedLabel{
     line-height: 2rem;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
@@ -78,6 +78,9 @@ h1, h2, h3, h4, h5, h6,
                 // font-weight: bold;
                 &:hover{
                     text-decoration: underline;
+                }
+                &:visited{
+                    color:$linkVisitedColor;
                 }
             }
             .form-group{

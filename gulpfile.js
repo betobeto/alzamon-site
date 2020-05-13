@@ -15,15 +15,15 @@ rename = require ('gulp-rename');
 // define source and destination folders
 
 const folder ={
-    srcPortfolio: 'assets_NOEXPORT/portfolio',
-    distPortfolio: 'assets/images/portfolio',
+    srcPortfolio: 'assets_NOEXPORT/**/*.{jpg,jpeg,gif,png}',
+    distPortfolio: 'assets/images/_exported',
     srcComics: 'assets_NOEXPORT/comics',
     distComics: 'assets/images/comics'
 }
 
 // define archive paths
 const paths ={
-    imgSrcPortfolio:[folder.srcPortfolio + '/**/*.{jpg,jpeg,gif,png}'],
+    imgSrcPortfolio:[folder.srcPortfolio + ''],
     imgDistPortfolio: [folder.distPortfolio +'']
 };
 
@@ -40,7 +40,7 @@ function checkPath(done) {
 
 function copyImages(done){
     // define generated img sizes
-    [400,1500].forEach(function(size){
+    [400,900,1500].forEach(function(size){
       return gulp.src(paths.imgSrcPortfolio)
       // do resizing and renaming
       .pipe(imageresize({ width: size }))
@@ -61,4 +61,3 @@ function copyImages(done){
     done();
     }
     exports.copyImages = copyImages;
-    

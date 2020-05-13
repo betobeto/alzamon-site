@@ -32,7 +32,12 @@ author: alzamonart
                 <div class="gutter-sizer"></div>
 
                 {% assign hp = site.portfolio | where:"categories", "homepage" | sort: "sort_number" | reverse %}
-                {% for item in hp %}
+                {% for item in hp limit:32 %}
+                {%- comment -%}
+                Optional: set limit: XX to restrict homepage display to that number
+                {%- endcomment -%}
+
+
                 <!-- masonry item -->
                 <div class="portfolio-masonry-item">
                     <a href="{{item.url}}">

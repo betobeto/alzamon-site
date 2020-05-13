@@ -27,4 +27,14 @@
     - sk_name: Inktober 2019 - Dark
       sk_thumb: /assets/images/sketchbook/2019_sk_inktober26@400w.png
       sk_full: /assets/images/sketchbook/2019_sk_inktober26@1500w.png 
+    - sk_name: Daniel and Elias - Sketch
+      sk_thumb: /assets/images/sketchbook/2018_cd_danielElias_vector_sketch@400w.jpg
+      sk_full: /assets/images/sketchbook/2018_cd_danielElias_vector_sketch@1500w.jpg
+    - sk_name: Illustrator Workshop 01
+      sk_thumb: /assets/images/sketchbook/2019_i_iws_01_sketch@400w.png
+      sk_full: /assets/images/sketchbook/2019_i_iws_01_sketch@1500w.png
+    - sk_name: Illustrator Workshop 02
+      sk_thumb: /assets/images/sketchbook/2019_i_iws_02_sketch@400w.jpg
+      sk_full: /assets/images/sketchbook/2019_i_iws_02_sketch@1500w.jpg
+
 ---

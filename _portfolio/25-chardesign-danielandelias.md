@@ -45,8 +45,14 @@ extraimages:
       ei_full: /assets/images/portfolio/2016_i_kitchenSoupWatercolor@1500w.jpg    
 ---
 
-### A story of three characters
+### A Life in Three (so far) Characters
 
-Bacon ipsum dolor amet bresaola ball tip picanha, tenderloin jerky spare ribs chuck capicola corned beef alcatra leberkas fatback pork loin salami. Shank beef pork loin, ham hock ham capicola pancetta t-bone kevin rump flank. Pork chop beef ribs short ribs shoulder. Fatback landjaeger sirloin, beef pancetta shankle tail.
+Some of us artists end up over time designing cartoon characters that eventually become our artistic alter egos, our *"paper kids"* if it fits better. These are mine.
 
-We'll need to have a look inside you with this camera. You guys go on without me! I'm going to go… look for more stuff to steal! Wow! A superpowers drug you can just rub onto your skin? You'd think it would be something you'd have to freebase.
+**Daniel** is the oldest of them all. I began drawing him circa 1995 when I was still at the University of Costa Rica. The Lord Fauntleroy-esque hairstyle, the odd red sports suit — it all came together almost instantly. I picture him as a 9-year old wisecracking, street smart, outgoing yet well-meaning boy who acts first and thinks second way too many times, which usually gets him into trouble.
+
+**Elias** is Daniel's best friend, a year his junior, maybe because he's the yin to Daniel's yang. Elias is your typical nerdy boy too sage for his years, an introvert, almost zen-like type who has an elaborate answer for everything. Everything that isn't what Daniel excels at, that is.
+
+**Susana** is the latest newcomer to the gang. She can be as temperamental as Daniel so they clash more often that they would admit. However she's got a soft spot for fair causes like ecology, global warming, animal rights and equal fairness for all. She lives with an older sister from who she's taken a lot of personality cues.
+
+One of my perennial dreams has been to create an ongoing comic or graphic novel series with them. I did one briefly in 2011 but has been put on hold, with exception of two episodes available on the [Comics section](/comics/) of this site.

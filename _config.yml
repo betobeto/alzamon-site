@@ -4,6 +4,10 @@
 #url: "http://localhost:4000"
 encoding: UTF-8
 
+#include generated htaccess file for remote hosting
+include: 
+  - .htaccess
+
 defaults:
   - scope:
       path: ""
@@ -19,10 +23,13 @@ category-list: [homepage,illustration,characterdesign,comics,sketchbook]
 collections:
   portfolio:
     output: true
+    permalink: /:collection/:name
   comics:
     output: true
+    permalink: /:collection/:name
   sketchbook:
     output: true
+    permalink: pretty
     # permalink: /portfolio/:path
 
 # build settings

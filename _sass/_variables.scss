@@ -8,10 +8,6 @@ $theme-colors: ("primary": rgb(75, 68, 67),
     "secondary": rgb(13, 57, 34),
     "danger": rgb(216, 106, 124));
 
-// Navbar Variables
-//====================================
-$navbarBgColor: rgb(26, 2, 13);
-
 // custom color variables
 // ===================================
 $headerColor: rgb(236, 34, 159);
@@ -22,6 +18,12 @@ $linkVisitedColor:rgb(139, 88, 88);
 $footerLinkColor: lighten($linkColor, 40%);
 $btnDarkColor: darken($linkColor,40%);
 $btnDarkColorHover: lighten($linkColor,20%);
+$jtGradientStartColor:rgba(41, 24, 32, 0.85);
+$jtGradientEndColor: rgba(14, 3, 10, 1);
+
+// Navbar Variables
+//====================================
+$navbarBgColor: $jtGradientEndColor;
 
 // block element variables
 // ===================================

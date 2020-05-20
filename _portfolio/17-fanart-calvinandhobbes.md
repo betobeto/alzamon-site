@@ -6,7 +6,7 @@ categories:
     - illustration
 pretty_category: Illustration
 pretty_title: "Fan Art: Calvin & Hobbes"
-permalink: /portfolio/fanart-calvin-hobbes
+permalink: /portfolio/fanart/fanart-calvin-hobbes
 sort_number: 17
 masonryimage: /assets/images/portfolio/2019_fa_calvinAndHobbes@400w.jpg
 fullsizeimage: /assets/images/portfolio/2019_fa_calvinAndHobbes@1500w.jpg

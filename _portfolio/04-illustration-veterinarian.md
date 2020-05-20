@@ -7,7 +7,7 @@ categories:
 pretty_category: Illustration
 pretty_title: Vet At Work
 sort_number: 04
-permalink: /portfolio/vet-at-work
+permalink: /portfolio/illustration/vet-at-work
 masonryimage: /assets/images/portfolio/2016_i_veterinarianWatercolor@400w.jpg
 fullsizeimage: /assets/images/portfolio/2016_i_veterinarianWatercolor@1500w.jpg
 work_details:

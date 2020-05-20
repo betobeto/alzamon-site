@@ -6,7 +6,8 @@ categories:
     - homepage
 pretty_category: Illustration
 pretty_title: "Fan Art: Phineas & Ferb"
-permalink: /portfolio/fanart-phineas-ferb
+description: Fan Art based on the Phineas and Ferb TV series.
+permalink: /portfolio/fanart/fanart-phineas-ferb
 sort_number: 19
 masonryimage: /assets/images/portfolio/2019_fa_phineasAndFerb@400w.jpg
 fullsizeimage: /assets/images/portfolio/2019_fa_phineasAndFerb@1500w.jpg

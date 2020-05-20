@@ -5,7 +5,7 @@ categories:
     - illustration
 pretty_category: Illustration
 pretty_title: "Fan Art: La Ribambelle"
-permalink: /portfolio/fanart-la-ribambelle
+permalink: /portfolio/fanart/fanart-la-ribambelle
 sort_number: 18
 masonryimage: /assets/images/portfolio/2019_fa_laRibambelle@400w.png
 fullsizeimage: /assets/images/portfolio/2019_fa_laRibambelle@1500w.png

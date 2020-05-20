@@ -6,7 +6,7 @@ categories:
     - homepage
 pretty_category: Illustration
 pretty_title: "Fan Art: Off And Away"
-permalink: /portfolio/illustration/fanart-offandaway
+permalink: /portfolio/fanart/fanart-offandaway
 sort_number: 10
 masonryimage: /assets/images/portfolio/2019_fa_offAndAway@400w.jpg
 fullsizeimage: /assets/images/portfolio/2019_fa_offAndAway@1500w.jpg

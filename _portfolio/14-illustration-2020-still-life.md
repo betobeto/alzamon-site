@@ -6,7 +6,7 @@ categories:
     - illustration
 pretty_category: Illustration
 pretty_title: Still Life with Plants
-permalink: /portfolio/still-life
+permalink: /portfolio/illustration/still-life
 sort_number: 14
 masonryimage: /assets/images/portfolio/2020_i_stillLife@400w.jpg
 fullsizeimage: /assets/images/portfolio/2020_i_stillLife@1500w.jpg

@@ -6,7 +6,7 @@ categories:
     - illustration
 pretty_category: Illustration
 pretty_title: "Fan Art: Boule & Bill"
-permalink: /portfolio/fanart-boule-bill
+permalink: /portfolio/fanart/fanart-boule-bill
 sort_number: 16
 masonryimage: /assets/images/portfolio/2018_fa_bouleBillRockwell@400w.jpg
 fullsizeimage: /assets/images/portfolio/2018_fa_bouleBillRockwell@1500w.jpg

@@ -6,7 +6,7 @@ categories:
     - homepage
 pretty_category: Illustration
 pretty_title: "Cap'n Claws"
-permalink: /portfolio/captain-claws
+permalink: /portfolio/illustration/captain-claws
 sort_number: 20
 masonryimage: /assets/images/portfolio/2019_i_captainClaws@400w.jpg
 fullsizeimage: /assets/images/portfolio/2019_i_captainClaws@1500w.jpg

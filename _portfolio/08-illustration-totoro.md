@@ -6,7 +6,7 @@ categories:
     - illustration
 pretty_category: Illustration
 pretty_title: My Neighbor Totoro
-permalink: /portfolio/totoro-parody
+permalink: /portfolio/illustration/totoro-parody
 sort_number: 08
 masonryimage: /assets/images/portfolio/2020_i_myNeighborTotoro@400w.jpg
 fullsizeimage: /assets/images/portfolio/2020_i_myNeighborTotoro@1500w.jpg

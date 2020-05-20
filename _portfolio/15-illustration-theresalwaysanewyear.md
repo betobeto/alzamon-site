@@ -6,7 +6,7 @@ categories:
     - illustration
 pretty_category: Illustration
 pretty_title: There's always a New Year
-permalink: /portfolio/theres-always-new-year
+permalink: /portfolio/illustration/theres-always-new-year
 sort_number: 15
 masonryimage: /assets/images/portfolio/2020_i_newYear_edited@400w.jpg
 fullsizeimage: /assets/images/portfolio/2020_i_newYear_edited@1500w.jpg

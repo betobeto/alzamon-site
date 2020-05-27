@@ -1,6 +1,10 @@
 ---
 layout: portfolio
-title: Kick Buttowski Fan Art - Alzamon - Children's Illustration by Alberto Gonzalez
+title: "Fan Art: Kick Buttowski"
+# FB and Jekyll SEO Tag values
+description: Digital fan art illustration based on characters from the Kick Buttowski TV series.
+image: /assets/images/portfolio/2016_fa_kickButtowski@400w.jpg
+# End FB and Jekyll SEO Tag values
 categories: 
     - illustration
     - homepage

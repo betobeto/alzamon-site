@@ -1,6 +1,10 @@
 ---
 layout: portfolio
-title: It's a Small World - Alzamon - Children's Illustration by Alberto Gonzalez
+title: It's a Small World
+# FB and Jekyll SEO Tag values
+description: Children's Illustration themed around the constant changing of moods of our planet Earth.
+image: /assets/images/portfolio/2017_i_smallWorld@400w.jpg
+# End FB and Jekyll SEO Tag values
 categories: 
     - homepage
     - illustration

@@ -1,6 +1,10 @@
 ---
 layout: portfolio
-title: Kitchen Soup - Alzamon - Children's Illustration by Alberto Gonzalez
+title: Kitchen Soup
+# FB and Jekyll SEO Tag values
+description: Children's watercolor illustration depicting a kitchen soup gathering.
+image: /assets/images/portfolio/2016_i_kitchenSoupWatercolor@400w.jpg
+# End FB and Jekyll SEO Tag values
 categories: 
     - illustration
 pretty_category: Illustration

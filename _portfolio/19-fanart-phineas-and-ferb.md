@@ -1,6 +1,10 @@
 ---
 layout: portfolio
-title: Fanart Phineas & Ferb - Alzamon - Children's Illustration by Alberto Gonzalez
+title: "Fan Art: Phineas & Ferb"
+# FB and Jekyll SEO Tag values
+description: Fan Art illustration based on characters from the famous Phineas and Ferb TV series.
+image: /assets/images/portfolio/2019_fa_phineasAndFerb@400w.jpg
+# End FB and Jekyll SEO Tag values
 categories: 
     - illustration
     - homepage

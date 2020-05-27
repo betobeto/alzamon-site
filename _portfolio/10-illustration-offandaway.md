@@ -1,6 +1,10 @@
 ---
 layout: portfolio
-title: Off And Away - Alzamon - Children's Illustration by Alberto Gonzalez
+title: "Fan Art: Off And Away"
+# FB and Jekyll SEO Tag values
+description: Fan art illustrarion piece based on book and characters by Canadian illustrator Cale Atkinson.
+image: /assets/images/portfolio/2019_fa_offAndAway@400w.jpg
+# End FB and Jekyll SEO Tag values
 categories: 
     - illustration
     - homepage
@@ -10,9 +14,6 @@ permalink: /portfolio/fanart/fanart-offandaway
 sort_number: 10
 masonryimage: /assets/images/portfolio/2019_fa_offAndAway@400w.jpg
 fullsizeimage: /assets/images/portfolio/2019_fa_offAndAway@1500w.jpg
-extraimages:
-    - /assets/images/portfolio/2015_i_explorersOne@400w.jpg
-    - /assets/images/portfolio/2017_i_petitPrince@400w.jpg
 work_details:
     - Digital Illustration, 2019
     - "Tools used: Procreate, iPad Pro, Apple Pencil"

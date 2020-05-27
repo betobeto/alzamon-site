@@ -1,6 +1,10 @@
 ---
 layout: portfolio
-title: Independence Lights - Alzamon - Children's Illustration by Alberto Gonzalez
+title: Independence Lights
+# FB and Jekyll SEO Tag values
+description: Digital children's illustration themed on Costa Rica's tradition of a nightly lamp parade on the eve of the country's Independence Day.
+image: /assets/images/portfolio/2018_cd_independenceDay@400w.png
+# End FB and Jekyll SEO Tag values
 categories: 
     - illustration
     - homepage

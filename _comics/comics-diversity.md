@@ -1,6 +1,10 @@
 ---
 layout: comics
-title: Diversity (comic) - Alzamon - Children's Illustration by Alberto Gonzalez
+title: Diversity (comic)
+# FB and Jekyll SEO Tag values
+description: Single page comic about dealing with LBGT diversity from a children's perspective.
+image: /assets/images/comics/2018-06-01-comic-diversity-400.png
+# End FB and Jekyll SEO Tag values
 categories: 
     - homepage
     - comics

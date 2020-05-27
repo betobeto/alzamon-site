@@ -1,6 +1,10 @@
 ---
 layout: portfolio
-title: There's Always a New Year - Alzamon - Children's Illustration by Alberto Gonzalez
+title: There's Always a New Year
+# FB and Jekyll SEO Tag values
+description: Illustration done to celebrate New Year's Eve 2020 - which I changed afterwards.
+image: /assets/images/portfolio/2020_i_newYear_edited@400w.jpg
+# End FB and Jekyll SEO Tag values
 categories: 
     - homepage
     - illustration

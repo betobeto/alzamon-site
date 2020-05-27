@@ -30,8 +30,9 @@ Timestamped May 2020, when the whole world was going to end by a virus but I kep
 <html lang="en">
 
 <head>
-  {% seo %}
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %} - Alzamon Children's Illustration, Comics & Design</title>
   <meta charset="UTF-8">
+  {% include meta-tags-base.html %}
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/assets/css/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="/assets/css/bootstrap-grid.min.css">

@@ -1,6 +1,10 @@
 ---
 layout: portfolio
-title: The Road Ahead - Alzamon - Children's Illustration by Alberto Gonzalez
+title: The Road Ahead
+# FB and Jekyll SEO Tag values
+description: Children's Illustration depicting an adventurous girl ready for adventure.
+image: /assets/images/portfolio/2014_i_roadAhead@400w.jpg
+# End FB and Jekyll SEO Tag values
 categories: 
     - homepage
     - illustration

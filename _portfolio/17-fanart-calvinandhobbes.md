@@ -1,6 +1,10 @@
 ---
 layout: portfolio
-title: Fanart Calvin & Hobbes - Alzamon - Children's Illustration by Alberto Gonzalez
+title: "Fan Art: Calvin & Hobbes"
+# FB and Jekyll SEO Tag values
+description: Fan Art illustration based on the famous Calvin and Hobbes characters and comics strip from Bill Watterson.
+image: /assets/images/portfolio/2019_fa_calvinAndHobbes@400w.jpg
+# End FB and Jekyll SEO Tag values
 categories: 
     - homepage
     - illustration

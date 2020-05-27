@@ -1,6 +1,10 @@
 ---
 layout: portfolio
-title: Bullying - Alzamon - Children's Illustration by Alberto Gonzalez
+title: Bullying
+# FB and Jekyll SEO Tag values
+description: Illustration themed on the worldwide issue of bullying in schools.
+image: /assets/images/portfolio/2014_i_bullying@400w.jpg
+# End FB and Jekyll SEO Tag values
 categories: 
     - illustration
     - homepage

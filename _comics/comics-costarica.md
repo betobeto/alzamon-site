@@ -1,11 +1,15 @@
 ---
 layout: comics
-title: Discovering Costa Rica - Alzamon - Children's Illustration by Alberto Gonzalez
+title: Discovering Costa Rica (Angoulême giveaway)
+# FB and Jekyll SEO Tag values
+description: A 4-page comic in French about Costa Rica I created and published on a small run to give away at the 2016 edition of the Angoulême comics festival in France.
+image: /assets/images/comics/2016_cm_costaRicaAng01@400w.jpg
+# End FB and Jekyll SEO Tag values
 categories: 
     - homepage
     - comics
 pretty_category: Comics
-pretty_title: Discovering Costa Rica
+pretty_title: Discovering Costa Rica (Angoulême giveaway)
 permalink: /comics/discovering-costarica
 masonryimage: /assets/images/comics/2016_cm_costaRicaAng01@400w.jpg
 fullsizeimage: /assets/images/comics/2016_cm_costaRicaAng01@1500w.jpg

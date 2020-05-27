@@ -1,6 +1,10 @@
 ---
 layout: comics
-title: Shirley comic pilot - Alzamon - Children's Illustration by Alberto Gonzalez
+title: Shirley (comic pilot)
+# FB and Jekyll SEO Tag values
+description: A comic story project based on a real life story of a girl who wanted to make it big in soccer — and did.
+image: /assets/images/comics/2017_cm_shirley_web@400w.jpg
+# End FB and Jekyll SEO Tag values
 categories: 
     - homepage
     - comics

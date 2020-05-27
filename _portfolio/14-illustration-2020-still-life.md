@@ -1,6 +1,10 @@
 ---
 layout: portfolio
-title: Still Life - Alzamon - Children's Illustration by Alberto Gonzalez
+title: Still Life with Plants
+# FB and Jekyll SEO Tag values
+description: Digital illustration of still life with patio pots and plants.
+image: /assets/images/portfolio/2016_i_kitchenSoupWatercolor@400w.jpg
+# End FB and Jekyll SEO Tag values
 categories: 
     - homepage
     - illustration

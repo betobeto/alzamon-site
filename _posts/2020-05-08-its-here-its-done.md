@@ -3,6 +3,7 @@ layout: posts
 title: It's here, it's done (again)
 postimagesmall: /assets/images/blog/alzamon-art-finally-done@400w.jpg 
 postimage: /assets/images/blog/alzamon-art-finally-done@1500w.jpg
+image: /assets/images/blog/alzamon-art-finally-done@400w.jpg 
 description: A post on how I, a designer and illustrator turned coder, was able to develop my alzamon.art online illustration portfolio.
 ---
 

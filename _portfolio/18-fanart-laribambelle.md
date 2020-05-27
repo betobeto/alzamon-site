@@ -1,6 +1,10 @@
 ---
 layout: portfolio
-title: Fanart La Ribambelle - Alzamon - Children's Illustration by Alberto Gonzalez
+title: "Fan Art: La Ribambelle"
+# FB and Jekyll SEO Tag values
+description: Fan Art illustration based on characters from the La Ribambelle comics series from Belgian cartoonist Jean Roba.
+image: /assets/images/portfolio/2019_fa_laRibambelle@400w.png
+# End FB and Jekyll SEO Tag values
 categories: 
     - illustration
 pretty_category: Illustration

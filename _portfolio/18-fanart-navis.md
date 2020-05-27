@@ -1,6 +1,10 @@
 ---
 layout: portfolio
-title: Fanart Navis - Alzamon - Children's Illustration by Alberto Gonzalez
+title: "Fan Art: Navis"
+# FB and Jekyll SEO Tag values
+description: Fan Art illustration based on characters from the Navis bande dessinee / comics series featuring art by Jose Luis Munuera.
+image: /assets/images/portfolio/2017_fa_navis_munuera@400w.jpg
+# End FB and Jekyll SEO Tag values
 categories: 
     - illustration
 pretty_category: Illustration

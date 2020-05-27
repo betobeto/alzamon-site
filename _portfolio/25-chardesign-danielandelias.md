@@ -1,6 +1,10 @@
 ---
 layout: portfolio-series
-title: "Character Design: Daniel & Elias - Alzamon - Children's Illustration by Alberto Gonzalez"
+title: "Character Design: Daniel, Elias & Susana"
+# FB and Jekyll SEO Tag values
+description: Portfolio showcase page featuring model sheets, illustrations and background story on kid characters Daniel, Elias and Susana by Alzamon (Alberto Gonzalez)
+image: /assets/images/portfolio/2020_cd_danielEliasSusana_masonry.jpg
+# End FB and Jekyll SEO Tag values
 categories: 
     - homepage
     - characterdesign

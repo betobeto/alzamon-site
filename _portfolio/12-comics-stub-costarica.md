@@ -1,6 +1,6 @@
 ---
 layout: comics
-title: Discovering Costa Rica - Alzamon - Children's Illustration by Alberto Gonzalez
+title: Discovering Costa Rica
 categories: 
     - homepage
     - comics

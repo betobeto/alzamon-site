@@ -1,6 +1,10 @@
 ---
 layout: portfolio
-title: Fanart Boule & Bill - Alzamon - Children's Illustration by Alberto Gonzalez
+title: "Fan Art: Boule & Bill"
+# FB and Jekyll SEO Tag values
+description: Fan Art illustration combining the talents of American painter Norman Rockwell and Belgian comics artist Jean Roba, featuring characters from his Boule & Bill comic strip.
+image: /assets/images/portfolio/2018_fa_bouleBillRockwell@400w.jpg
+# End FB and Jekyll SEO Tag values
 categories: 
     - homepage
     - illustration

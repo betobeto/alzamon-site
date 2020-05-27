@@ -1,6 +1,10 @@
 ---
 layout: portfolio-series
-title: "This Too Shall Pass - Alzamon - Children's Illustration by Alberto Gonzalez"
+title: "This Too Shall Pass - Illustration"
+# FB and Jekyll SEO Tag values
+description: Illustration created on the wake of the 2020 coronavirus pandemic with a message of hope, featuring my original characters.
+image: /assets/images/portfolio/2020_i_thistooshallpass__all@400w.png
+# End FB and Jekyll SEO Tag values
 categories: 
     - homepage
     - illustration

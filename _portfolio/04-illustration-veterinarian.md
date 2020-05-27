@@ -1,6 +1,10 @@
 ---
 layout: portfolio
-title: Vet at work - Alzamon - Children's Illustration by Alberto Gonzalez
+title: Vet at work - Illustration
+# FB and Jekyll SEO Tag values
+description: Illustration depicting a kid female character as a veterinarian at work.
+image: /assets/images/portfolio/2016_i_veterinarianWatercolor@400w.jpg
+# End FB and Jekyll SEO Tag values
 categories: 
     - homepage
     - illustration

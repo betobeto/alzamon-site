@@ -1,6 +1,6 @@
 ---
 layout: comics
-title: Diversity (comic) - Alzamon - Children's Illustration by Alberto Gonzalez
+title: Diversity (comic)
 categories: 
     - homepage
     - comics

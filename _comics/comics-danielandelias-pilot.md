@@ -1,6 +1,10 @@
 ---
 layout: comics
-title: Daniel &amp; Elias (Pilot 2014) - Alzamon - Children's Illustration by Alberto Gonzalez
+title: Daniel &amp; Elias (Comic Pilot 2014)
+# FB and Jekyll SEO Tag values
+description: A 4-page comic pilot I created featuring my kid characters Daniel, Elias and Susana.
+image: /assets/images/comics/2014_cm_danielElias01@400w.jpg
+# End FB and Jekyll SEO Tag values
 categories: 
     - homepage
     - comics

@@ -1,6 +1,10 @@
 ---
 layout: portfolio
-title: Captain Claws - Alzamon - Children's Illustration by Alberto Gonzalez
+title: Captain Claws
+# FB and Jekyll SEO Tag values
+description: Digital children's illustration featuring a pirate cat.
+image: /assets/images/portfolio/2019_i_captainClaws@400w.jpg
+# End FB and Jekyll SEO Tag values
 categories: 
     - illustration
     - homepage

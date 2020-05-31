@@ -8,6 +8,7 @@ image: /assets/images/portfolio/2019_fa_offAndAway@400w.jpg
 categories: 
     - illustration
     - homepage
+    - fanart
 pretty_category: Illustration
 pretty_title: "Fan Art: Off And Away"
 permalink: /portfolio/fanart/fanart-offandaway

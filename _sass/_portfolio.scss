@@ -48,6 +48,31 @@ $portfolioPagePrevNextIndex: 2;
         &-description{
             font-size: 2rem !important;
         }
+        &-selector{
+            // Isotope script category selector of masonry items
+            ul{
+                list-style: none;
+                width:100%;
+                display: inline-block;
+                li{
+                    width:25%;
+                    font-size:1.4rem;
+                    text-align: center;
+                    &:not(:last-child){
+                        border-right: $linkVisitedColor 2px solid;
+                    }
+                    a{
+                        text-decoration: none !important;
+                        &:active{
+                            color:$linkColor;
+                        }
+                        &:hover{
+                            color: $linkColor !important;
+                        }
+                    }
+                }
+            }
+        }
     }
 
 

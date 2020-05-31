@@ -40,12 +40,10 @@ h1, h2, h3, h4, h5, h6,
 }
 
 // navbar
-#azmNav{
-        ul li{
-            font-family: 'Open Sans Condensed', Arial, Helvetica, sans-serif;
-    }
-}
 
+#azmNav ul li, .portfolio-category-selector ul li{
+    font-family: 'Open Sans Condensed', Arial, Helvetica, sans-serif;
+}
 
 //blog font styles
 .post{

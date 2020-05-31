@@ -7,7 +7,7 @@ image: /assets/images/portfolio/2018_fa_bouleBillRockwell@400w.jpg
 # End FB and Jekyll SEO Tag values
 categories: 
     - homepage
-    - illustration
+    - fanart
 pretty_category: Illustration
 pretty_title: "Fan Art: Boule & Bill"
 permalink: /portfolio/fanart/fanart-boule-bill

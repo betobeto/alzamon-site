@@ -25,6 +25,13 @@ $(document).ready(function () {
                         gutter: '.gutter-sizer'
             }
         });
+         // enable data filtering
+         $('.portfolio-category-selector a').click(function (e) { 
+            var filterValue = $(this).attr('data-filter');
+            $pMasonry.isotope({ filter: filterValue });
+            //console.log (filterValue);
+            e.preventDefault();
+        });
     });
 // end
 });

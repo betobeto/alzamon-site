@@ -8,6 +8,7 @@ image: /assets/images/portfolio/2020_i_myNeighborTotoro@400w.jpg
 categories: 
     - homepage
     - illustration
+    - fanart
 pretty_category: Illustration
 pretty_title: "Fan Art: My Neighbor Totoro"
 permalink: /portfolio/illustration/totoro-parody

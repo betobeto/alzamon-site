@@ -7,7 +7,7 @@ image: /assets/images/portfolio/2019_fa_calvinAndHobbes@400w.jpg
 # End FB and Jekyll SEO Tag values
 categories: 
     - homepage
-    - illustration
+    - fanart
 pretty_category: Illustration
 pretty_title: "Fan Art: Calvin & Hobbes"
 permalink: /portfolio/fanart/fanart-calvin-hobbes

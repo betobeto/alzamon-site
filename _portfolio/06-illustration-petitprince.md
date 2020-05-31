@@ -7,7 +7,7 @@ image: /assets/images/portfolio/2017-05-14-petitPrinceCorrected-400.jpg
 # End FB and Jekyll SEO Tag values
 categories: 
     - homepage
-    - illustration
+    - characterdesign
 pretty_category: Illustration
 pretty_title: Le Petit Prince
 permalink: /portfolio/illustration/lepetitprince

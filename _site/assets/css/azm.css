@@ -43,7 +43,7 @@ p, strong, ul, ol, li { font-family: 'Open Sans', sans-serif; }
 
 h1, h2, h3, h4, h5, h6, .portfolio-previous, .portfolio-next, .portfolio-previous > span > strong, .portfolio-next > span > strong, .pm-overlay > span, .lg-sub-html, .portfolio-grid-item, .posts-grid span, #comicPages a span { font-family: 'Open Sans Condensed', sans-serif; }
 
-#azmNav ul li { font-family: 'Open Sans Condensed', Arial, Helvetica, sans-serif; }
+#azmNav ul li, .portfolio-category-selector ul li { font-family: 'Open Sans Condensed', Arial, Helvetica, sans-serif; }
 
 .post-content p, .post-content span, .post-content ul li { font-family: 'Open Sans Condensed', sans-serif; }
 
@@ -198,6 +198,18 @@ body main .footer-scroll { width: 33vw; border: white 1px solid; position: relat
 .portfolio-category h2 { color: #dd1864; font-size: 4rem; }
 
 .portfolio-category-description { font-size: 2rem !important; }
+
+.portfolio-category-selector ul { list-style: none; width: 100%; display: inline-block; }
+
+.portfolio-category-selector ul li { width: 25%; font-size: 1.4rem; text-align: center; }
+
+.portfolio-category-selector ul li:not(:last-child) { border-right: #8b5858 2px solid; }
+
+.portfolio-category-selector ul li a { text-decoration: none !important; }
+
+.portfolio-category-selector ul li a:active { color: #dd1864; }
+
+.portfolio-category-selector ul li a:hover { color: #dd1864 !important; }
 
 .portfolio-masonry-item { background: #4b2b35; }
 

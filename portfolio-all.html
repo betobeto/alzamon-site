@@ -22,6 +22,24 @@ Portfolio page: set source variable and conditions on Assign tag below
     </div>
 
     <div class="row">
+        <div class="col-md-8 offset-md-2 mb-5 d-flex align-items-center justify-content-center portfolio-category-selector">
+
+{% comment %}
+=======================================================================
+Portfolio page: set item category class on data-filters for Isotope
+=======================================================================
+{% endcomment %}
+
+            <ul class="d-flex">
+                <li><a href="#" data-filter="*">Show All</a></li>
+                <li><a href="#" data-filter=".pmi-illustration">Illustration</a></li>
+                <li><a href="#" data-filter=".pmi-characterdesign">Character Design</a></li>
+                <li><a href="#" data-filter=".pmi-fanart">Fan Art</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row">
         <div class="col">
             <!-- Illustration Portfolio Masonry -->
             <div class="portfolio-masonry">
@@ -38,9 +56,13 @@ ex:  --for item in illos limit:40--
 
                 {% for item in pf %}       
                 <!-- set categories display scope here -->
-                    {% if item.categories contains "illustration" or item.categories contains "characterdesign" %}
+
+                {%- comment -%}
+                     if item.categories contains "illustration" or item.categories contains "characterdesign"
+                {%- endcomment -%}
+                   
                 <!-- masonry item -->
-                <div class="portfolio-masonry-item">
+                <div class="portfolio-masonry-item {% if item.categories contains "illustration"%}pmi-illustration{% endif%}{%if item.categories contains "characterdesign"%}pmi-characterdesign{%endif%}{%if item.categories contains "fanart"%}pmi-fanart{%endif%}">
                     <a href="{{item.url}}">
                         <div class="pm-overlay">
                             <i class="fas fa-search"></i>
@@ -54,7 +76,10 @@ ex:  --for item in illos limit:40--
                     <p><strong>{{item.pretty_title}}</strong> / {{item.pretty_category}}</p>
                 </div>
                 <!-- /masonry item -->
+                {%- comment -%}
                     {% endif %}
+                {%- endcomment -%}
+
                 {% endfor %}
             </div>
             <!-- /End Masonry -->

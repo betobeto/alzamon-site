@@ -6,7 +6,7 @@ description: Fan Art illustration based on characters from the La Ribambelle com
 image: /assets/images/portfolio/2019_fa_laRibambelle@400w.png
 # End FB and Jekyll SEO Tag values
 categories: 
-    - illustration
+    - fanart
 pretty_category: Illustration
 pretty_title: "Fan Art: La Ribambelle"
 permalink: /portfolio/fanart/fanart-la-ribambelle

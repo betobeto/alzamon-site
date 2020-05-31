@@ -6,7 +6,7 @@ description: Fan Art illustration based on characters from the Navis bande dessi
 image: /assets/images/portfolio/2017_fa_navis_munuera@400w.jpg
 # End FB and Jekyll SEO Tag values
 categories: 
-    - illustration
+    - fanart
 pretty_category: Illustration
 pretty_title: "Fan Art: Navis"
 permalink: /portfolio/fanart/fanart-navis

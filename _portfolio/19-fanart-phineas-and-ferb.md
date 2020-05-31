@@ -6,8 +6,8 @@ description: Fan Art illustration based on characters from the famous Phineas an
 image: /assets/images/portfolio/2019_fa_phineasAndFerb@400w.jpg
 # End FB and Jekyll SEO Tag values
 categories: 
-    - illustration
     - homepage
+    - fanart
 pretty_category: Illustration
 pretty_title: "Fan Art: Phineas & Ferb"
 description: Fan Art based on the Phineas and Ferb TV series.

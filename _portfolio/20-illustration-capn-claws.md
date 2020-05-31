@@ -6,11 +6,11 @@ description: Digital children's illustration featuring a pirate cat.
 image: /assets/images/portfolio/2019_i_captainClaws@400w.jpg
 # End FB and Jekyll SEO Tag values
 categories: 
-    - illustration
+    - characterdesign
     - homepage
-pretty_category: Illustration
+pretty_category: Character Design
 pretty_title: "Cap'n Claws"
-permalink: /portfolio/illustration/captain-claws
+permalink: /portfolio/characterdesign/captain-claws
 sort_number: 20
 masonryimage: /assets/images/portfolio/2019_i_captainClaws@400w.jpg
 fullsizeimage: /assets/images/portfolio/2019_i_captainClaws@1500w.jpg

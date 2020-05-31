@@ -6,8 +6,8 @@ description: Digital fan art illustration based on characters from the Kick Butt
 image: /assets/images/portfolio/2016_fa_kickButtowski@400w.jpg
 # End FB and Jekyll SEO Tag values
 categories: 
-    - illustration
     - homepage
+    - fanart
 pretty_category: Illustration
 pretty_title: "Fan Art: Kick Buttowski"
 permalink: /portfolio/fanart-kick-buttowski

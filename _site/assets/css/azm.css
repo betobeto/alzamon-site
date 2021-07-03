@@ -129,12 +129,6 @@ body main { position: relative; z-index: 4; }
 
 body main .main-container { background: #1b0c11; }
 
-body main .footer-scroll { width: 33vw; border: white 1px solid; position: relative; left: 35vw; min-height: 1200px; margin-bottom: -95vh; display: block; background: transparent; background: url("/assets/images/azm-footer-rope.png") no-repeat center top; background-size: contain; }
-
-@media (min-width: 767px) and (max-width: 1023px) { body main .footer-scroll { width: 50vw; left: 40vw; } }
-
-@media (max-width: 766px) { body main .footer-scroll { display: none; } }
-
 .container { width: 85vw; padding: 1rem 0; }
 
 @media (max-width: 1023px) { .container { width: 86vw; } }
@@ -177,9 +171,7 @@ body main .footer-scroll { width: 33vw; border: white 1px solid; position: relat
 
 @media (min-width: 767px) { .nav-link-social-mobile { display: none; } }
 
-@media (max-width: 766px) { .nav-link-social-mobile { display: grid; grid-template-columns: 25% 25% 25% 25%; border-top: #dd1864 1px solid; }
-  .nav-link-social-mobile li { text-align: center; }
-  .nav-link-social-mobile li i.fab { font-size: 1.8rem; color: #dd1864; } }
+@media (max-width: 766px) { .nav-link-social-mobile { display: grid; grid-template-columns: 25% 25% 25% 25%; border-top: #dd1864 1px solid; } .nav-link-social-mobile li { text-align: center; } .nav-link-social-mobile li i.fab { font-size: 1.8rem; color: #dd1864; } }
 
 .btn { line-height: 2rem; font-size: 1.4rem; font-family: 'Open Sans Condensed', sans-serif; }
 
@@ -255,22 +247,19 @@ body main .footer-scroll { width: 33vw; border: white 1px solid; position: relat
 
 @media (min-width: 767px) and (max-width: 1023px) { .portfolio-previousNext a.portfolio-previous, .portfolio-previousNext a.portfolio-next { width: 300px; } }
 
-@media (max-width: 766px) { .portfolio-previousNext a.portfolio-previous, .portfolio-previousNext a.portfolio-next { width: 200px; }
-  .portfolio-previousNext a.portfolio-previous img, .portfolio-previousNext a.portfolio-next img { width: 60px; } }
+@media (max-width: 766px) { .portfolio-previousNext a.portfolio-previous, .portfolio-previousNext a.portfolio-next { width: 200px; } .portfolio-previousNext a.portfolio-previous img, .portfolio-previousNext a.portfolio-next img { width: 60px; } }
 
 .portfolio-previousNext a.portfolio-previous:hover i.fas, .portfolio-previousNext a.portfolio-previous:hover span > strong, .portfolio-previousNext a.portfolio-next:hover i.fas, .portfolio-previousNext a.portfolio-next:hover span > strong { color: white; }
 
 .portfolio-previousNext a.portfolio-previous { padding: 0.8rem 2rem 0.8rem 0.8rem; border-radius: 16px; background: -moz-linear-gradient(45deg, #ad1856 0%, rgba(173, 24, 86, 0.67) 30%, rgba(209, 43, 103, 0.5) 45%, rgba(244, 61, 119, 0.36) 60%, rgba(247, 96, 146, 0) 100%); background: -webkit-linear-gradient(45deg, #ad1856 0%, rgba(173, 24, 86, 0.67) 30%, rgba(209, 43, 103, 0.5) 45%, rgba(244, 61, 119, 0.36) 60%, rgba(247, 96, 146, 0) 100%); background: linear-gradient(45deg, #ad1856 0%, rgba(173, 24, 86, 0.67) 30%, rgba(209, 43, 103, 0.5) 45%, rgba(244, 61, 119, 0.36) 60%, rgba(247, 96, 146, 0) 100%); -moz-transition: background 0.5s ease-out; -webkit-transition: background 0.5s ease-out; transition: background 0.5s ease-out; }
 
-@media (min-width: 1200px) { .portfolio-previousNext a.portfolio-previous { background-size: 420%; background-position: -1270px 0; }
-  .portfolio-previousNext a.portfolio-previous:hover { background-position: 0; } }
+@media (min-width: 1200px) { .portfolio-previousNext a.portfolio-previous { background-size: 420%; background-position: -1270px 0; } .portfolio-previousNext a.portfolio-previous:hover { background-position: 0; } }
 
 @media (max-width: 766px) { .portfolio-previousNext a.portfolio-previous { background-position: -160px 0; background-size: 200%; border-radius: 8px; } }
 
 .portfolio-previousNext a.portfolio-next { padding: 0.8rem 0.8rem 0.8rem 2rem; border-radius: 16px; background: -moz-linear-gradient(45deg, rgba(244, 61, 119, 0) 0%, rgba(247, 96, 146, 0.5) 50%, #cb356e 75%, #ad1856 100%); background: -webkit-linear-gradient(45deg, rgba(244, 61, 119, 0) 0%, rgba(247, 96, 146, 0.5) 50%, #cb356e 75%, #ad1856 100%); background: linear-gradient(45deg, rgba(244, 61, 119, 0) 0%, rgba(247, 96, 146, 0.5) 50%, #cb356e 75%, #ad1856 100%); -moz-transition: background 0.5s ease-out; -webkit-transition: background 0.5s ease-out; transition: background 0.5s ease-out; }
 
-@media (min-width: 1200px) { .portfolio-previousNext a.portfolio-next { background-size: 450%; background-position: 1700px 0; }
-  .portfolio-previousNext a.portfolio-next:hover { background-position: 1000px 0; } }
+@media (min-width: 1200px) { .portfolio-previousNext a.portfolio-next { background-size: 450%; background-position: 1700px 0; } .portfolio-previousNext a.portfolio-next:hover { background-position: 1000px 0; } }
 
 @media (max-width: 766px) { .portfolio-previousNext a.portfolio-next { background-position: 0; background-size: 200%; border-radius: 8px; } }
 
@@ -438,16 +427,11 @@ footer { background-image: url("/assets/images/azm-bg-footer-alpha-hires.png"), 
 
 .footer-container p a { color: #fcdfea !important; text-decoration: underline; }
 
-@media (min-width: 767px) and (max-width: 1023px) { .footer-container ul { min-width: 250px; }
-  .footer-container ul li { margin-left: -30px; } }
+@media (min-width: 767px) and (max-width: 1023px) { .footer-container ul { min-width: 250px; } .footer-container ul li { margin-left: -30px; } }
 
 @media (min-width: 1024px) and (max-width: 1199px) { .footer-container { position: relative; } }
 
-@media (max-width: 766px) { .footer-container { height: inherit; background: #0e030a; padding: 2rem 2rem 1rem; margin: 0; }
-  .footer-container h3, .footer-container ul { display: none; }
-  .footer-container p { font-size: 0.8rem; margin-bottom: 1rem; text-align: center; }
-  .footer-container p a { color: #dd1864; }
-  .footer-container p:last-child { display: block; margin-bottom: 1rem !important; } }
+@media (max-width: 766px) { .footer-container { height: inherit; background: #0e030a; padding: 2rem 2rem 1rem; margin: 0; } .footer-container h3, .footer-container ul { display: none; } .footer-container p { font-size: 0.8rem; margin-bottom: 1rem; text-align: center; } .footer-container p a { color: #dd1864; } .footer-container p:last-child { display: block; margin-bottom: 1rem !important; } }
 
 .redline { border: red 1px solid; }
 

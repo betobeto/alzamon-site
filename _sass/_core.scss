@@ -29,32 +29,6 @@ body {
         .main-container {
             background: $body-bg;
         }
-
-        .footer-scroll {
-           
-            width: 33vw;
-            border: white 1px solid;
-            position: relative;
-            left: 35vw;
-            min-height: 1200px;
-            margin-bottom: -95vh;
-            display: block;
-            background: transparent;
-            background: url('/assets/images/azm-footer-rope.png') no-repeat center top;
-            background-size: contain;
-
-            // breakpoints
-            @include respond-between(sm, md) {
-                // tablets
-                width: 50vw;
-                left: 40vw;
-            }
-
-            @include respond-below(sm) {
-                // mobile
-                display: none;
-            }
-        }
     }
 }
 
@@ -67,8 +41,6 @@ body {
         width: 86vw;
     }
 }
-
-
 
 .gallery {
     &-thumbnail {

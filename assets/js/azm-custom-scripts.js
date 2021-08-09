@@ -13,6 +13,18 @@ $(document).ready(function () {
         selector: "a"
     }); 
 
+    //enable light-dark switching
+    //https://codepen.io/chen1223/pen/PobxwMj
+
+    var azmMain = document.getElementsByClassName('azm-main')[0];
+    //bind toggler
+    document.getElementById('toggler').addEventListener('change',(event) =>{
+        console.log(toggler);
+        //swap data-theme on body
+        event.target.checked ? 
+        azmMain.removeAttribute('data-theme'):azmMain.setAttribute('data-theme','dark');
+    });
+
     // Isotope: set var + enable
     var $pMasonry = $('.portfolio-masonry').imagesLoaded(
         function(){

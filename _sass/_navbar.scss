@@ -3,44 +3,27 @@
 .jumbotron {
     // Super big header for medium and above screens
     margin-bottom: 0px;
-    
-    // &-bg{
-    //     width:100%;
-    //     height:100%;
-    //     display: flex;
-    //     flex-direction: column;
-    //     background: url('/assets/images/azm-header-bg-01.jpg') no-repeat center center fixed;
-    //     -webkit-background-size: cover;
-    //     -moz-background-size: cover;
-    //     background-size: cover;
-    //     -o-background-size: cover;
-    //     border: yellow 1px dashed;
-    // }
-
-    // background-image: linear-gradient(to bottom, rgba(41, 24, 32, 0.85), rgba(14, 3, 10, 0.85)),
-    // url('/assets/images/azm-header-bg-01.jpg');
-    // background: rgb(41, 24, 32) !important;
-    // background-repeat:no-repeat;
-    // background-position: 0 0;
     position: relative;
+    min-height: auto;
     z-index: 100;
-    min-height: 260px;
-    &-bg{
-        background-attachment: static;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+    background-color: var(--jumbotron-bg-color);
+    transition: background-color .45s ease-in;
+    // &-bg{
+    //     background-attachment: static;
+    //     background-position: center;
+    //     background-repeat: no-repeat;
+    //     background-size: cover;
+    // }
     h1 {
-        background-image: url('/assets/images/alzamon_logo.png');
+        // logo container
+        background-image: var(--azm-logo);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: contain;
         display: inline-block;
-        width: 300px;
-        // height: 130px;
+        width: 400px;
         &.display-4{
-            font-size: 5rem;
+            font-size: 8rem;
         }
         >span {
             @include hideText;
@@ -51,8 +34,12 @@
         display: none !important;
     }
     @include respond-above(md){
-        padding-bottom: 0;
+        padding: 0;
 
+    }
+    // nix jumbotron padding on tablets
+    @include respond-between(sm, md){
+        padding: unset;
     }
 }
 
@@ -60,9 +47,10 @@
 // ====================
 
 .navbar {
-    background: $navbarBgColor;
+    background-color: var(--navbar-bg-color);
+    transition: background-color .45s ease-in;
     &-brand {
-        background-image: url('/assets/images/alzamon_logo.png');
+        background-image: var(--azm-logo);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: contain;
@@ -79,6 +67,7 @@
             // each item
             .nav-link {
                 margin-right: 1rem;
+                color: var(--navbar-link-color);
                 @include respond-above(lg){
                     font-size:1.6rem;
                 }
@@ -93,6 +82,9 @@
                     i {
                         color: $linkColor;
                     }
+                }
+                &:hover{
+                    color: $navbar-link-hover-color;
                 }
 
             }
@@ -114,6 +106,10 @@
             }
         }
     }
+    //mobile: menu icon
+    &-toggler-icon{
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(221, 24, 100, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
 }
 .nav-link-social-mobile{
     @include respond-above(sm){
@@ -131,4 +127,84 @@
             }
         }
     }
+}
+
+// Light/Dark Toggle Switcher
+// based on: https://codepen.io/chen1223/pen/PobxwMj
+// ==================================================
+.controller-row{
+    position: sticky;
+    left: 88%;
+    top: 25px;
+    z-index: 1040;
+    margin: 0 0 -25px 0;
+    width: 100px;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+        .switch{
+            position: absolute;
+            left: 24px;
+            display: inline-block;
+            width: 48px;
+            height: 20px;
+            input{
+                //hide default html checkbox
+                opacity: 0;
+                width: 0;
+                height: 0;
+                &:checked+.slider{
+                    background-color: var(--switch-on-color);
+                    &:before{
+                        //move switch animation
+                        -webkit-transform: translateX(26px);
+                        -ms-transform: translateX(26px);
+                        transform: translateX(26px);
+                    }
+                }
+                &:focus+.slider{
+                    box-shadow: 0 0 1px var(--switch-on-color);
+                }
+            }
+        }
+        .slider{
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: var(--switch-off-color);
+            -webkit-transition: .4s;
+            transition: .4s;
+            &.round{
+                border-radius: 20px;
+                &:before{
+                    border-radius:50%;
+                }
+            }
+            &:before{
+                position: absolute;
+                content: "";
+                height: 12px;
+                width: 12px;
+                left: 4px;
+                bottom: 4px;
+                background-color: var(--toggler-color);
+                -webkit-transition: .4s;
+                transition: .4s;
+            }
+        }
+        //icons
+        i.fas, i.far{
+            color: var(--icon-color);
+        }
+        //breakpoints
+        @include respond-below(sm){
+            left: 55%;
+        }
+
+        @include respond-between(sm, md){
+            left: 85%;
+        }
 }

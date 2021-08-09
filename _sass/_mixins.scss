@@ -40,7 +40,7 @@
 
         span {
             font-weight: 300;
-            color: $portfolioHeaderCategoryColor;
+            // color: $portfolioHeaderCategoryColor;
         }
 
         @include respond-below(sm) {
@@ -87,7 +87,7 @@
 }
 
 @mixin portfolioBgGradient() {
-    background: $body-bg !important;
+    background: var(--body-bg-color) !important;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0c050a+0,1c0515+36,1c0515+36,1c0515+100&0+0,0.62+36,1+100 */
     background: -moz-linear-gradient(top, $pfGradientStart 0%, $pfGradientMiddle 36%, $pfGradientEnd 100%);
     /* FF3.6-15 */

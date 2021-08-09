@@ -23,7 +23,7 @@ Fair, decent, non-commercial use of my work on the web (e.g. social media sharin
 AND/OR leave any URLs present untouched.
 No unauthorized use of my work in any commercial contexts is allowed.
 
-Original creation date May 2020, revised November 2020
+Original creation date May 2020, last updated August 2021.
 -->
 
 <!-- layout: Default -->
@@ -59,17 +59,31 @@ Original creation date May 2020, revised November 2020
 
 </head>
 
-<body>
+<body data-theme="dark" class="azm-main">
   <!-- Jumbotron -->
 
 
-<div class="jumbotron jumbotron-bg jumbotron-fluid d-flex justify-content-center" style="background-image: linear-gradient(to bottom, rgba(41, 24, 32, 0.7) 0%, rgba(14, 3, 10, 1) 90%), 
-url('/assets/images/jumbotron/jt_bg_00_2.jpg');">
+<!-- Light/Dark toggle switch -->
+    <!-- Controller Row -->
+    <div class="controller-row">
+        <i class="fas fa-moon"></i>
+        <label class="switch" title="Toggle Light/Dark styles">
+            <input id="toggler" type="checkbox">
+            <span class="slider round"></span>
+        </label>
+        <i class="far fa-moon"></i>
+    </div>
+    <!-- End of controller row -->
+
+<!-- <div class="jumbotron jumbotron-bg jumbotron-fluid d-flex justify-content-center blueline" style="background-image: linear-gradient(to bottom, rgba(41, 24, 32, 0.7) 0%, rgba(14, 3, 10, 1) 90%), 
+url('/assets/images/jumbotron/jt_bg_00_5.jpg');"> -->
+<div class="jumbotron jumbotron-bg jumbotron-fluid d-flex justify-content-center">
         <a href="/"><h1 class="display-4"><span>Alzamon.com</span></h1></a>
 </div>
 
 <!-- Navbar -->
-<nav class="d-sm-flex flex-sm-column navbar navbar-expand-md navbar-dark sticky-top">
+<nav class="d-sm-flex flex-sm-column navbar navbar-expand-md sticky-top">
+<!-- <nav class="d-sm-flex flex-sm-column navbar navbar-expand-md navbar-dark sticky-top"> -->
     <!-- navbar brand - tablet & under -->
     <a href="/" class="navbar-brand d-block d-sm-none"><span>Alzamon.art - Children's Illustration portfolio of Alberto Gonzalez, Costa Rica</span></a>
     <!-- toggler button - tablet & under -->
@@ -87,23 +101,23 @@ url('/assets/images/jumbotron/jt_bg_00_2.jpg');">
         
     
         
-     <li class="nav-item"><a class="nav-link" href="/portfolio/">Artwork</a></li>   
+    <li class="nav-item"><a class="nav-link" href="/portfolio/">Artwork</a></li>   
         
     
         
-     <li class="nav-item"><a class="nav-link" href="/comics/">Comics</a></li>   
+    <li class="nav-item"><a class="nav-link" href="/comics/">Comics</a></li>   
         
     
         
-     <li class="nav-item"><a class="nav-link" href="/sketchbook/">Sketches</a></li>   
+    <li class="nav-item"><a class="nav-link" href="/sketchbook/">Sketches</a></li>   
         
     
         
-     <li class="nav-item"><a class="nav-link" href="/blog/">Blog</a></li>   
+    <li class="nav-item"><a class="nav-link" href="/blog/">Blog</a></li>   
         
     
         
-     <li class="nav-item"><a class="nav-link" href="/about/">About / Contact</a></li>   
+    <li class="nav-item"><a class="nav-link" href="/about/">About / Contact</a></li>   
         
     
     <!-- end navbar loop -->
@@ -115,26 +129,26 @@ url('/assets/images/jumbotron/jt_bg_00_2.jpg');">
                 <div class="dropdown-menu" aria-labelledby="submenu-portfolio">
                     <a href="https://alzamon.art/portfolio-illustration" class="dropdown-item">Illustrations</a>
                     <a href="https://alzamon.art/portfolio-characterdesign" class="dropdown-item">Character Design</a>
-                  <div class="dropdown-divider"></div> 
+                    <div class="dropdown-divider"></div> 
                     <a href="https://alzamon.art/portfolio-comics" class="dropdown-item">Comics</a>
                 </div>
             </li> -->
             
-             <!-- social media links - tablet and above only -->
-             
-             <li class="nav-item">
+            <!-- social media links - tablet and above only -->
+            
+            <li class="nav-item">
                 <a class="nav-link social" href="https://www.instagram.com/alzamonart" target="_blank" title="Alzamon on Instagram (@alzamonart)"><i class="fab fa-instagram"></i>&nbsp;</a>
             </li>
             
-             <li class="nav-item">
+            <li class="nav-item">
                 <a class="nav-link social" href="https://www.deviantart.com/alzamonart" target="_blank" title="Alzamon on DeviantArt"><i class="fab fa-deviantart"></i>&nbsp;</a>
             </li>
             
-             <li class="nav-item">
+            <li class="nav-item">
                 <a class="nav-link social" href="https://www.behance.net/alzamon" target="_blank" title="Alzamon on Behance"><i class="fab fa-behance"></i>&nbsp;</a>
             </li>
             
-             <li class="nav-item">
+            <li class="nav-item">
                 <a class="nav-link social" href="https://www.twitter.com/alzamonart" target="_blank" title="Alzamon on Twitter (@alzamonart)"><i class="fab fa-twitter"></i>&nbsp;</a>
             </li>
             

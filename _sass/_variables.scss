@@ -2,8 +2,10 @@
 
 //Bootstrap: override defaults
 // ===================================
-$body-bg: rgb(27, 12, 17);
-$body-color: rgb(255, 255, 255);
+$body-default-bg: rgb(27, 12, 17);
+$body-light-bg: rgb(255, 255, 255);
+$body-default-color: rgb(255, 255, 255);
+$body-light-color: rgb(255, 255, 255);
 $theme-colors: ("primary": rgb(75, 68, 67),
     "secondary": rgb(13, 57, 34),
     "danger": rgb(216, 106, 124));
@@ -24,6 +26,8 @@ $jtGradientEndColor: rgba(14, 3, 10, 1);
 // Navbar Variables
 //====================================
 $navbarBgColor: $jtGradientEndColor;
+$navbar-link-color: rgb(163, 151, 151);
+$navbar-link-hover-color: rgba(163, 151, 151,0.7);
 
 // block element variables
 // ===================================

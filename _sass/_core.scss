@@ -7,29 +7,75 @@ $zIndexMain: 4;
 $zIndexRopeScroller:3;
 $zIndexFooter: 2;
 
+// bind variables to themes for switching
+// ========================================
+
+// Default theme for swapping (light)
+:root,[data-theme="default"]{
+    --body-bg-color: rgb(255, 255, 255);
+    --body-color:  rgb(27, 12, 17);
+    --body-text-color: rgb(27, 12, 17);
+    --switch-on-color: rgb(221, 24, 100);
+    --switch-off-color:rgb(139, 88, 88);
+    --toggler-color: rgb(173,24,86);
+    --navbar-bg-color: rgb(232, 219, 227);
+    --navbar-link-color: rgb(29, 22, 26);
+    --icon-color: rgb(221, 24, 100);
+    --jumbotron-bg-color: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 75%,  rgba(207, 207, 207,1) 92%);
+    --portfolio-masonry-bg-color: none;
+    --portfolio-masonry-title-color: rgb(37, 28, 32);
+    --portfolio-series-category-color: rgb(75, 62, 62);
+    --footer-text-color: rgb(249, 200, 219);
+    --azm-logo: url('/assets/images/alzamon_logo_light.png');
+}
+
+// dark theme -- default
+[data-theme="dark"]{
+    --body-bg-color: rgb(27, 12, 17);
+    --body-color: rgb(255, 255, 255);
+    --body-text-color: rgb(255, 255, 255);
+    --switch-on-color: rgb(221, 24, 100);
+    --switch-off-color: rgb(139, 88, 88);
+    --toggler-color: rgb(173,24,86);
+    --navbar-bg-color: rgba(14, 3, 10, 1);
+    --navbar-link-color: rgb(163, 151, 151);
+    --icon-color: rgb(255, 255, 255);
+    --jumbotron-bg-color: linear-gradient(to bottom, rgba(41, 24, 32, 0.7) 0%, rgba(14, 3, 10, 1) 90%);
+    --portfolio-masonry-bg-color: rgb(75, 43, 53);
+    --portfolio-masonry-title-color: white;
+    --portfolio-series-category-color: rgb(163, 151, 151);
+    --footer-text-color: rgb(249, 200, 219);
+    --azm-logo: url('/assets/images/alzamon_logo_dark.png');
+}
 
 * {
-    color: white;
+    // color: var(--body-color);
+    // transition: all .45s ease-in;
 }
 
 body {
     position: relative;
-    background: rgb(48, 41, 44);
+    // background-color: var(--body-bg-color);
+    // transition: background-color .45s ease-in;
 
     h1 {
         color: $headerColor;
         font-size: 4rem;
         text-align: center;
+        background-image: url('/assets/images/alzamon_logo_light.png');
     }
 
     main {
         position: relative;
         z-index: $zIndexMain;
-
-        .main-container {
-            background: $body-bg;
-        }
     }
+
+}
+
+//for bg switcher
+.azm-main{
+    background-color: var(--body-bg-color);
+    transition: background-color .45s ease-in;
 }
 
 .container {

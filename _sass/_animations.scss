@@ -109,8 +109,12 @@
 	        animation: bg-pan-left 1s cubic-bezier(0.645, 0.045, 0.355, 1.000) both;
 }
 
-//   animation mixins
 @mixin animMasonryTitle {
         -webkit-animation: scale-in-ver-bottom 0.45s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.15s both;
         animation: scale-in-ver-bottom 0.45s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.15s both;
+}
+
+// switch transition mixins
+@mixin switchTransition{
+        transition: all .45s ease-in;
 }

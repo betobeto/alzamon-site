@@ -22,6 +22,7 @@ h1, h2, h3, h4{
 
 p, strong, ul, ol, li{
     font-family: 'Open Sans', sans-serif;
+    color: var(--body-text-color);
 }
 
 h1, h2, h3, h4, h5, h6, 
@@ -59,6 +60,7 @@ h1, h2, h3, h4, h5, h6,
     .row{
             h1, h2, h3{
                 color: $linkColor;
+                background-image: none;
             }
             h2, h3{
                 margin: 1.2rem 0;
@@ -113,5 +115,6 @@ h1, h2, h3, h4, h5, h6,
     }
     p{
         font-size: 1rem !important;
+        color: var(--footer-text-color);
     }
 }

@@ -13,6 +13,7 @@ $portfolioPagePrevNextIndex: 2;
     overflow-x: hidden;
     @include portfolioBgGradient;
     background-attachment: scroll;
+    transition: background .45s ease-in;
 
     &:before {
         // use current portfolio piece as bg image
@@ -44,6 +45,9 @@ $portfolioPagePrevNextIndex: 2;
         h2 {
             color: $portfolioHeaderColor;
             font-size: 4rem;
+            span{
+                color: var(--portfolio-series-category-color);
+            }
         }
         &-description{
             font-size: 2rem !important;
@@ -78,10 +82,11 @@ $portfolioPagePrevNextIndex: 2;
 
     &-masonry{
         &-item{
-            background: $portfolioItemBgColor;
+            background: var(--portfolio-masonry-bg-color);
+            transition: background-color .45s ease-in;
         p {
             margin: 0.4rem 0 0 0;
-            color: $portfolioMasonryTitleColor;
+            color: var(--portfolio-masonry-title-color);
             font-family: 'Open Sans Condensed', sans-serif;
             font-size: 0.8rem;
             text-align: center;
@@ -356,6 +361,11 @@ $portfolioPagePrevNextIndex: 2;
 #portfolio-item,
 #comics-item {
     @include portfolioTextHeader;
+    h2{
+        span{
+            color:var(--portfolio-series-category-color);
+        }
+    }
 
     img:first-child {
         // main portfolio image
@@ -515,5 +525,8 @@ $portfolioPagePrevNextIndex: 2;
 .portfolio-series{
     h2, h3{
         text-align: center !important;
+        span{
+            color: var(--portfolio-series-category-color);
+        }
     }
 }

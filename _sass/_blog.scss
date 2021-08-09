@@ -52,6 +52,7 @@
             z-index: 5;
             .post-header{
                 color: $blogHeaderColor;
+                background-image: none;
                 + span{
                     color: $blogTextColor;
                     font-size:larger;
